@@ -1,0 +1,56 @@
+<%= form_for(@bicicletum) do |f| %>
+  <% if @usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2> No se pudo completar la tarea.</h2>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :"Marca de la Bicicleta" %><br>
+    <%= f.text_field :bic_marca , class:"form-control", required: true  %>
+  </div>
+  <div class="field">
+    <%= f.label :"Modelo de la Bicicleta:" %><br>
+    <%= f.text_field :bic_modelo , class:"form-control", required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :"Tipo Bicicleta:" %><br>
+    <%= f.radio_button(:bic_tipo, "M") %>
+    <%= f.label(:bic_tipo, "Bicicleta de Montaña ") %><br>
+    <%= f.radio_button(:bic_tipo, "P") %>
+    <%= f.label(:bic_tipo, "Bicicleta de Carretera o Pista ") %><br>
+    <%= f.radio_button(:bic_tipo, "O") %>
+    <%= f.label(:bic_tipo, "Otro ") %><br>
+    <%= f.radio_button(:bic_tipo, "N") %>
+    <%= f.label(:bic_tipo, "No lo se") %>
+  </div>
+  <div class="field">
+    <%= f.label :"Aro:" %><br>
+    <%= f.number_field :bic_aro, within: 12...32, class:"form-control", required: true  %>
+  </div>
+  <div class="field">
+    <%= f.label :"Velocidades" %><br>
+    <%= f.number_field :bic_velocidades, within: 1...33, class:"form-control", required: true  %>
+  </div>
+  <div class="field">
+    <%= f.label :"Color(es) Principal" %><br>
+    <%= f.text_field :bic_color_princ, class:"form-control", required: true  %>
+  </div>
+  <div class="field">
+    <%= f.label :Imagen %><br>
+    <%= f.text_field :bic_img_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :"Numero de Serie" %><br>
+    <%= f.text_field :bic_num_serie, class:"form-control", required: true  %>
+  </div>
+  <div class="field">
+    <%= f.label :"Si tu bicicleta fue robada,  activa la siguiente opcion:" %><br>
+    <%= f.check_box :bic_estado_robo, {}, "V", "F" %>
+    <%= f.label :"Dar aviso de robo" %><br>
+  </div>
+
+  <div class="actions">
+    <%= f.submit  "Crear Bicicleta", class:"btn btn-success"%>
+  </div>
+<% end %>

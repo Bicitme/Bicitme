@@ -1,0 +1,38 @@
+<h1>Usuario Creado:<h1>
+<p>
+  <strong>Run:</strong>
+  <%= @usuario.usuar_run %>
+</p>
+<p>
+  <strong>Nombre:</strong>
+  <%= @usuario.usuar_nom_usuario %>
+</p>
+<p>
+  <strong>Apellido Paterno:</strong>
+  <%= @usuario.usuar_ap_pat %>
+</p>
+
+<p>
+  <strong>Apellido Materno:</strong>
+  <%= @usuario.usuar_ap_mat %>
+</p>
+
+<p>
+  <strong>Correo Electronico:</strong>
+  <%= @usuario.usuar_correo %>
+</p>
+<p>
+  <strong>Cuenta tipo:</strong>
+  <%if @usuario.usuar_tipo_cod == 'C' %>
+  Ciclista
+  <%else %>
+  Taller
+  <%end %>
+</p>
+
+<%= link_to 'Editar Informacion', edit_usuario_path(@usuario), class:"btn btn-lg btn-info" %> |
+<%if @usuario.usuar_tipo_cod == "C"%>
+<%= link_to 'Siguiente', vista_ciclista_path, class:"btn btn-lg btn-success" %>
+<%else%>
+<%= link_to 'Siguiente', vista_taller_path, class:"btn btn-lg btn-success" %>
+<%end%>

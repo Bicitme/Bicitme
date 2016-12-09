@@ -1,0 +1,48 @@
+<%#Esta seccion hay q eliminarla y que redirija%>
+<div class="center jumbotron">
+<%if current_user %>
+	<%if current_user.usuar_tipo_cod == 'C' %>
+		<h1>Hola: <%= current_user.usuar_nom_usuario %>:</h1>
+		<table class="table">
+	    <thead>
+	      <tr>
+	        <th>Menu</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td><%= link_to "Ingresar Bicicleta ", new_bicicletum_path %><br></td>
+	      </tr>
+	      <tr>
+	        <td><%= link_to "Modificar Bicicletas", bicicleta_path %><br></td>
+	      </tr>
+	      <tr>
+	        <td><%= link_to "Solicitar Reparacion", '#' %><br></td>
+	      </tr>
+	      <tr>
+	        <td><%= link_to "Responder Presupuestos", '#' %><br></td>
+	      </tr>
+	      <tr>
+	        <td><%= link_to "Calificar Reparacion", '#' %><br></td>
+	      </tr>
+	    </tbody>
+	  </table>
+
+
+	<%else%>
+		<h1>Hola <%= current_user.usuar_nom_usuario %>:</h1>
+  		<h2>
+		    Estimado, su taller aun se encuentra bajo verificacion.
+		    Puede solicitar mayor informacion a nuestro correo: info@bicitme.cl
+		    <li><%= link_to "Cerrar Sesion", logout_path, class: "btn btn-lg btn-danger"  %></li>
+		<h2>
+	<%end%>
+<%else%>
+	  <h1>Bienvenido a BicitMe</h1>
+	  <h2>
+	  		Este proyecto tiene como fin ayudar a los amantes de las dos ruedas cuando más lo necesiten:
+	  </h2>
+	  <%= link_to "Crear Cuenta", new_usuario_path, class: "btn btn-lg btn-primary" %>
+<%end%>
+</div>
+

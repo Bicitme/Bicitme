@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bic_id: 1
+  bic_marca: MyString
+  bic_modelo: MyString
+  bic_tipo: MyString
+  bic_aro: 1
+  bic_velocidades: 1
+  bic_color_princ: MyString
+  bic_img_1: MyString
+  bic_img_2: MyString
+  bic_num_serie: MyString
+  bic_estado_robo: MyString
+  bic_cic_run: MyString
+
+two:
+  bic_id: 1
+  bic_marca: MyString
+  bic_modelo: MyString
+  bic_tipo: MyString
+  bic_aro: 1
+  bic_velocidades: 1
+  bic_color_princ: MyString
+  bic_img_1: MyString
+  bic_img_2: MyString
+  bic_num_serie: MyString
+  bic_estado_robo: MyString
+  bic_cic_run: MyString

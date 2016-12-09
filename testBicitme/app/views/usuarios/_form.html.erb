@@ -1,0 +1,48 @@
+<%= form_for(@usuario) do |f| %>
+  <% if @usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2> No se pudo completar la tarea.</h2>
+    </div>
+  <% end %>
+    
+
+
+  <div class="field">
+    <%= f.label :"Ingrese RUN:" %><br>
+    <%= f.text_field :usuar_run, class:"form-control", required: true %>
+  </div>
+    <div class="field">
+    <%= f.label :"Ingrese Nombre:" %><br>
+    <%= f.text_field :usuar_nom_usuario, class:"form-control", required: true  %>
+  </div>
+  <div class="field">
+    <%= f.label :"Ingrese Apellido Paterno:"%><br>
+    <%= f.text_field :usuar_ap_pat, class:"form-control", required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :"Ingrese Apellido Materno:"%><br>
+    <%= f.text_field :usuar_ap_mat, class:"form-control", required: true %>
+  </div>
+
+ 
+  <div class="field">
+    <%= f.label :"Ingrese una contraseña:" %><br>
+    <%= f.text_field :usuar_contrasegna, class:"form-control", required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :"Ingrese su correo:" %><br>
+    <%= f.text_field :usuar_correo, class:"form-control", required: true %>
+  </div>
+  <div class="field">
+  <%= f.label :"Usted es un Ciclista o un Taller:" %><br>
+    <%= f.radio_button(:usuar_tipo_cod, "C") %>
+    <%= f.label(:usuar_tipo_cod, "Ciclista") %><br>
+    <%= f.radio_button(:usuar_tipo_cod, "T") %>
+    <%= f.label(:usuar_tipo_cod, "Taller") %>
+  </div>
+
+<br>
+  <div class="actions">
+    <%= f.submit "Crear Cuenta", class:"btn btn-success"%>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+json.extract! bicicletum, :id, :bic_id, :bic_marca, :bic_modelo, :bic_tipo, :bic_aro, :bic_velocidades, :bic_color_princ, :bic_img_1, :bic_img_2, :bic_num_serie, :bic_estado_robo, :bic_cic_run, :created_at, :updated_at
+json.url bicicletum_url(bicicletum, format: :json)
