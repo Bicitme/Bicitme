@@ -1,0 +1,65 @@
+<div class="center jumbotron">
+<p id="notice"><%= notice %></p>
+
+<h1>Listado de Bicicleta</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Tipo</th>
+      <th>Aro</th>
+      <th>Velocidades</th>
+      <th>Color Principal</th>
+      <th>Img</th>
+      <th>Numero de Serie</th>
+      <th>Robada</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bicicleta.each do |bicicletum| %>
+      <% if bicicletum.ciclista_id == current_user.id %>
+        <tr><h2>
+          <td><%= bicicletum.bic_marca %></td>
+          <td><%= bicicletum.bic_modelo %></td>
+          <td>
+            <%if bicicletum.bic_tipo == 'C'%>
+              Bicicleta de Carretera o Pista
+            <%else%>
+              <%if bicicletum.bic_tipo == 'M'%>
+                 Bicicleta de Montaña
+              <%else%>
+                Otro
+              <%end%>
+            <%end%>
+          </td>
+          <td><%= bicicletum.bic_aro %></td>
+          <td><%= bicicletum.bic_velocidades %></td>
+          <td><%= bicicletum.bic_color_princ %></td>
+          <td><%= bicicletum.bic_img_1 %></td>
+          <td><%= bicicletum.bic_num_serie %></td>
+          <td>
+            <%if bicicletum.bic_estado_robo == 'V'%>
+              Robada
+            <%else%>
+              Normal
+            <%end%>
+          </td>
+          <td><%= link_to '',edit_bicicletum_path(bicicletum),class: "glyphicon glyphicon-pencil"%></td>
+          <td><%= link_to '', bicicletum, method: :delete, data: { confirm: 'Esta seguro?' }, class: "glyphicon glyphicon-pencil"%></td></h2>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% if current_user %>
+  <%= link_to "Ingresar Bicicleta ", new_bicicletum_path, class: "btn btn-lg btn-primary" %><br>
+<% end %>
+</div>

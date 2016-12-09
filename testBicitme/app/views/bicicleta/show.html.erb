@@ -1,0 +1,61 @@
+<h1 id="notice"><%= notice %></h1>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @bicicletum.bic_marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @bicicletum.bic_modelo %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+    <%if  @bicicletum.bic_tipo == 'P'%>
+    Bicicleta de Carretera o Pista.
+  <%else%>
+        <%if  @bicicletum.bic_tipo == 'M'%>
+          Bicicleta de Montaña.
+        <%else%>
+          Bicicleta Otro
+        <%end%>
+  <%end%>
+</p>
+
+<p>
+  <strong>Aro:</strong>
+  <%= @bicicletum.bic_aro %>
+</p>
+
+<p>
+  <strong>Velocidades:</strong>
+  <%= @bicicletum.bic_velocidades %>
+</p>
+
+<p>
+  <strong>Color principal:</strong>
+  <%= @bicicletum.bic_color_princ %>
+</p>
+
+<p>
+  <strong>IMG:</strong>
+  <%= @bicicletum.bic_img_1 %>
+</p>
+
+<p>
+  <strong>Bic num serie:</strong>
+  <%= @bicicletum.bic_num_serie %>
+</p>
+
+<p>
+  <strong>Bic estado robo:</strong>
+  <%if  @bicicletum.bic_estado_robo == 'V'%>
+    Robada
+  <%else%>
+    No Robada
+  <%end%>
+</p>
+
+<%= link_to "Editar Bicicleta ", edit_bicicletum_path(@bicicletum), class: "btn btn-lg btn-primary" %><br>
+<%= link_to "Confirmar", new_bicicletum_path, class: "btn btn-lg btn-success" %><br>

@@ -1,0 +1,29 @@
+<div class="center jumbotron">
+	<h1>Bienvenido <%= current_user.usuar_nom_usuario %> a BicitMe:</h1>
+	<h2>
+		    Estimado, su taller aun se encuentra bajo verificacion.
+		    Puede solicitar mayor informacion a nuestro correo: info@bicitme.cl   
+	<h2>
+	  <table class="table">
+    <thead>
+      <tr>
+        <th>Menu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= link_to "Ver Peticiones ", '#' %><br></td>
+      </tr>
+      <tr>
+        <td><%= link_to "Ver Reparaciones", '#' %><br></td>
+      </tr>
+      <tr>
+        <td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td>
+      </tr>
+
+    </tbody>
+  </table>
+  	<li><%= link_to "Cerrar Sesion", logout_path, class: "btn btn-lg btn-danger"  %></li>
+  		
+	</h2>
+</div>
