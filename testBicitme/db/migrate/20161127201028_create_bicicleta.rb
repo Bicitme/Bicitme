@@ -13,7 +13,7 @@ class CreateBicicleta < ActiveRecord::Migration
       t.string :bic_num_serie
       t.string :bic_estado_robo
       t.string :bic_cic_run
-
+      t.string :ciclista_id
       t.timestamps null: false
     end
   end

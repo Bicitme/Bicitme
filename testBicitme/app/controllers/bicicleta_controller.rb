@@ -4,8 +4,8 @@ class BicicletaController < ApplicationController
   # GET /bicicleta
   # GET /bicicleta.json
   def index
-    @bicicleta = Bicicletum.all
-    #bicicleta = 
+    #@bicicleta = Bicicletum.find_by ciclista_id: current_user.id#
+    @bicicleta =Bicicletum.all 
   end
 
   # GET /bicicleta/1
