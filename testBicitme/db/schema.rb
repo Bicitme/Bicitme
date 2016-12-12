@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161128073835) do
+ActiveRecord::Schema.define(version: 20161212203432) do
 
   create_table "bicicleta", force: :cascade do |t|
     t.integer  "bic_id",          limit: 4
@@ -26,9 +26,9 @@ ActiveRecord::Schema.define(version: 20161128073835) do
     t.string   "bic_num_serie",   limit: 255
     t.string   "bic_estado_robo", limit: 255
     t.string   "bic_cic_run",     limit: 255
+    t.string   "ciclista_id",     limit: 255
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
-    t.integer  "ciclista_id",     limit: 4
   end
 
   create_table "ciclista", force: :cascade do |t|
@@ -37,15 +37,9 @@ ActiveRecord::Schema.define(version: 20161128073835) do
     t.integer  "cic_cant_den", limit: 4
     t.string   "cic_fono",     limit: 255
     t.string   "cic_estado",   limit: 255
+    t.integer  "usuario_id",   limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
-  end
-
-  create_table "tipo_usuarios", force: :cascade do |t|
-    t.text     "t_us_cod",         limit: 65535
-    t.text     "t_us_descripcion", limit: 65535
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
   end
 
   create_table "usuarios", force: :cascade do |t|

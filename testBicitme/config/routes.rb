@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :ciclista
+  get 'registrartelf', to: 'ciclista#new', as: 'registrartelf'
+  get 'editartelf', to: 'ciclista#index', as: 'editartelf'
   get 'vista/index'
   get 'vista/ciclista'
   get 'vista/taller'

@@ -6,7 +6,8 @@ class UsuariosController < ApplicationController
 
   def index
     @usuarios = Usuario.all
-    @bicicletas = Bicicletum.all  
+    @bicicletas = Bicicletum.all 
+    @ciclista = Ciclistum.all 
   end
   # GET /usuarios/1
   # GET /usuarios/1.json
@@ -26,9 +27,10 @@ class UsuariosController < ApplicationController
   # POST /usuarios.json
   def create
     @usuario = Usuario.new(usuario_params)
-
+    
     respond_to do |format|
       if @usuario.save
+        
         session[:usuarios_id] = @usuario.id
         format.html { redirect_to @usuario, notice: 'Usuario creado con exito.' }
         format.json { render :show, status: :created, location: @usuario }

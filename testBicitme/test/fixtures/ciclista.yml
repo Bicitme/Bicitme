@@ -6,6 +6,7 @@ one:
   cic_cant_den: 1
   cic_fono: MyString
   cic_estado: MyString
+  usuario_id: 1
 
 two:
   cic_run: MyString
@@ -13,3 +14,4 @@ two:
   cic_cant_den: 1
   cic_fono: MyString
   cic_estado: MyString
+  usuario_id: 1
