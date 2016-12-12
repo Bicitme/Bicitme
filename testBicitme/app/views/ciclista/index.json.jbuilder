@@ -1,0 +1,1 @@
+json.array! @ciclista, partial: 'ciclista/ciclistum', as: :ciclistum

@@ -1,0 +1,21 @@
+<%= form_for(@ciclistum) do |f| %>
+  <% if @ciclistum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ciclistum.errors.count, "error") %> prohibited this ciclistum from being saved:</h2>
+
+      <ul>
+      <% @ciclistum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cic_fono %><br>
+    <%= f.text_field :cic_fono %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

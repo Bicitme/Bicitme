@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ciclista run:</strong>
+  <%= @ciclistum.cic_run %>
+</p>
+
+<p>
+  <strong>Cantidad de Reparaciones:</strong>
+  <%= @ciclistum.cic_cant_rep %>
+</p>
+<!--
+<p>
+  <strong>Cic cant den:</strong>
+  <%= @ciclistum.cic_cant_den %>
+</p>
+-->
+<p>
+  <strong>Telefono:</strong>
+  <%= @ciclistum.cic_fono %>
+</p>
+
+<p>
+  <strong>Cic estado:</strong>
+  <%= @ciclistum.cic_estado %>
+</p>
+<!--
+<p>
+  <strong>Usuario:</strong>
+  <%= @ciclistum.usuario_id %>
+</p>
+-->
+<%= link_to 'Edit', edit_ciclistum_path(@ciclistum) %> |
+<%= link_to 'Back', ciclista_path %>
