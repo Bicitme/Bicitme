@@ -6,8 +6,13 @@ class UsuariosController < ApplicationController
 
   def index
     @usuarios = Usuario.all
+<<<<<<< HEAD
     @bicicletas = Bicicletum.all 
     @ciclista = Ciclistum.all 
+=======
+    @bicicletas = Bicicletum.all  
+    #Holi
+>>>>>>> 98a1636e21037ccd8adabbf6d2b09e9cd4857c2f
   end
   # GET /usuarios/1
   # GET /usuarios/1.json
