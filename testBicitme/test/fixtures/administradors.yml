@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  admin_run: MyString
+  admin_cant_aceptados: 1
+  admin_cant_ban_cic: 1
+  admin_cant_ban_taller: 1
+  usuario_id: 1
+
+two:
+  admin_run: MyString
+  admin_cant_aceptados: 1
+  admin_cant_ban_cic: 1
+  admin_cant_ban_taller: 1
+  usuario_id: 1

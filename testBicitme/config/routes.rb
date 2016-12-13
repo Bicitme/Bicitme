@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :administradors
+  get 'bienvenida', to: 'administradors#new', as: 'bienvenida'
   resources :encargado_tallers
   get 'registrarenc', to: 'encargado_tallers#new', as: 'registrarenc'
   get 'editarenc', to: 'encargado_tallers#index', as: 'editarenc'

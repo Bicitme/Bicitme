@@ -19,9 +19,13 @@
             		<li><%= link_to "Modificar Bicicleta ", bicicleta_path %></li>
             		<li><%= link_to "Solicitar Reparacion", vista_ciclista_path %></li>
             	<%else%>
-            		<li><%= link_to "Ver Peticioens", '#' %></li>
-            		<li><%= link_to "Ver Reparaciones", '#' %></li>
-            		<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
+            		<%if current_user.usuar_tipo_cod == 'E'%>
+	            		<li><%= link_to "Ver Peticiones", '#' %></li>
+	            		<li><%= link_to "Ver Reparaciones", '#' %></li>
+	            		<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
+	            	<%else%>
+	            		<li><%= link_to "Registrar Administrador", new_usuario_path %></li>
+	            	<%end%>
             	<%end%>
             	<li><%= link_to "Cerrar Sesion", logout_path %></li>
             <%else%>

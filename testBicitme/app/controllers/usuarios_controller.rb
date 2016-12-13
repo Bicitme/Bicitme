@@ -27,11 +27,16 @@ class UsuariosController < ApplicationController
   # POST /usuarios.json
   def create
     @usuario = Usuario.new(usuario_params)
-    
+    if (current_user) #Quien lo está creando es un admin? -> el usuario que va a crear también lo es.
+      @usuario.usuar_tipo_cod = 'A'
+    end
     respond_to do |format|
       if @usuario.save
+        if (current_user) #Ya esta dentro del sistema?
+        else
+          session[:usuarios_id] = @usuario.id #si no lo esta ingresarlo.  
+        end
         
-        session[:usuarios_id] = @usuario.id
         format.html { redirect_to @usuario, notice: 'Usuario creado con exito.' }
         format.json { render :show, status: :created, location: @usuario }
       else

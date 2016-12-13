@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161213193839) do
+ActiveRecord::Schema.define(version: 20161213203925) do
+
+  create_table "administradors", force: :cascade do |t|
+    t.string   "admin_run",             limit: 255
+    t.integer  "admin_cant_aceptados",  limit: 4
+    t.integer  "admin_cant_ban_cic",    limit: 4
+    t.integer  "admin_cant_ban_taller", limit: 4
+    t.integer  "usuario_id",            limit: 4
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+  end
 
   create_table "bicicleta", force: :cascade do |t|
     t.integer  "bic_id",          limit: 4
