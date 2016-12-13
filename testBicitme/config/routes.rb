@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :encargado_tallers
+  get 'registrarenc', to: 'encargado_tallers#new', as: 'registrarenc'
+  get 'editarenc', to: 'encargado_tallers#index', as: 'editarenc'
   resources :ciclista
   get 'registrartelf', to: 'ciclista#new', as: 'registrartelf'
   get 'editartelf', to: 'ciclista#index', as: 'editartelf'

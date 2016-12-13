@@ -7,9 +7,9 @@
     <tr>
       <th>Enc run</th>
       <th>Enc rol</th>
-      <th>Enc tiempo</th>
+      <th>Enc tiempo</th><!--
       <th>Enc estado</th>
-      <th>Usuario</th>
+      <th>Usuario</th>-->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,12 +19,13 @@
       <tr>
         <td><%= encargado_taller.enc_run %></td>
         <td><%= encargado_taller.enc_rol %></td>
-        <td><%= encargado_taller.enc_tiempo %></td>
+        <td><%= encargado_taller.enc_tiempo %></td><!--
         <td><%= encargado_taller.enc_estado %></td>
-        <td><%= encargado_taller.usuario_id %></td>
-        <td><%= link_to 'Show', encargado_taller %></td>
+        <td><%= encargado_taller.usuario_id %></td>-->
         <td><%= link_to 'Edit', edit_encargado_taller_path(encargado_taller) %></td>
-        <td><%= link_to 'Destroy', encargado_taller, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!--<td><%= link_to 'Show', encargado_taller %></td>
+        
+        <td><%= link_to 'Destroy', encargado_taller, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Encargado taller', new_encargado_taller_path %>
+<!--<%= link_to 'New Encargado taller', new_encargado_taller_path %> -->

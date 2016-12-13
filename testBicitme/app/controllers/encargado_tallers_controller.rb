@@ -4,7 +4,7 @@ class EncargadoTallersController < ApplicationController
   # GET /encargado_tallers
   # GET /encargado_tallers.json
   def index
-    @encargado_tallers = EncargadoTaller.all
+    @encargado_tallers = EncargadoTaller.where (["usuario_id = '%s'", current_user.id])
   end
 
   # GET /encargado_tallers/1
@@ -25,7 +25,10 @@ class EncargadoTallersController < ApplicationController
   # POST /encargado_tallers.json
   def create
     @encargado_taller = EncargadoTaller.new(encargado_taller_params)
-
+    @encargado_taller.enc_run = current_user.usuar_run
+    @encargado_taller.enc_estado = 'A'
+    @encargado_taller.usuario_id = current_user.id
+        #editar aca
     respond_to do |format|
       if @encargado_taller.save
         format.html { redirect_to @encargado_taller, notice: 'Encargado taller was successfully created.' }
