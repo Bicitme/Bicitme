@@ -1,0 +1,1 @@
+json.array! @encargado_tallers, partial: 'encargado_tallers/encargado_taller', as: :encargado_taller

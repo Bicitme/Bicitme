@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :encargado_tallers
   resources :ciclista
   get 'registrartelf', to: 'ciclista#new', as: 'registrartelf'
   get 'editartelf', to: 'ciclista#index', as: 'editartelf'

@@ -1,0 +1,37 @@
+<%= form_for(@encargado_taller) do |f| %>
+  <% if @encargado_taller.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@encargado_taller.errors.count, "error") %> prohibited this encargado_taller from being saved:</h2>
+
+      <ul>
+      <% @encargado_taller.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :enc_run %><br>
+    <%= f.text_field :enc_run %>
+  </div>
+  <div class="field">
+    <%= f.label :enc_rol %><br>
+    <%= f.text_field :enc_rol %>
+  </div>
+  <div class="field">
+    <%= f.label :enc_tiempo %><br>
+    <%= f.number_field :enc_tiempo %>
+  </div>
+  <div class="field">
+    <%= f.label :enc_estado %><br>
+    <%= f.text_field :enc_estado %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario_id %><br>
+    <%= f.number_field :usuario_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

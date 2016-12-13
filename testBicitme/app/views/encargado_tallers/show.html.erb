@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Enc run:</strong>
+  <%= @encargado_taller.enc_run %>
+</p>
+
+<p>
+  <strong>Enc rol:</strong>
+  <%= @encargado_taller.enc_rol %>
+</p>
+
+<p>
+  <strong>Enc tiempo:</strong>
+  <%= @encargado_taller.enc_tiempo %>
+</p>
+
+<p>
+  <strong>Enc estado:</strong>
+  <%= @encargado_taller.enc_estado %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @encargado_taller.usuario_id %>
+</p>
+
+<%= link_to 'Edit', edit_encargado_taller_path(@encargado_taller) %> |
+<%= link_to 'Back', encargado_tallers_path %>
