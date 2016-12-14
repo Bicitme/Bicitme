@@ -1,4 +1,4 @@
-<%#Esta seccion hay q eliminarla y que redirija%>
+<!--<%#Esta seccion hay q eliminarla y que redirija%> -->
 <div class="center jumbotron">
 <%if current_user %>
 	<%if current_user.usuar_tipo_cod == 'C' %>
@@ -30,10 +30,8 @@
 	      </tr>
 	    </tbody>
 	  </table>
-
-
 	<%else%>
-		<%if (current_user.usuar_tipo_cod == 'E')%>
+		<% if (current_user.usuar_tipo_cod == 'E') %>
 			<h1>Hola <%= current_user.usuar_nom_usuario %>:</h1>
 	  		<h2>
 			    Estimado, su taller aun se encuentra bajo verificacion.
@@ -42,11 +40,13 @@
 			<h2>
 		<%else%>
 			<% if(current_user.usuar_tipo_cod == 'A')%>
+				<td><%= link_to "Registrar Administrador", new_usuario_path %><br></td>
 				<td><%= link_to "REVISAR QUE PODÍA HACER EL ADMIN", '#' %><br></td>
 				<td><%= link_to "REVISAR", '#' %><br></td>
 				<td><%= link_to "REVISAR", '#' %><br></td>
 		
-		<% end%>
+			<% end%>
+		<%end%>
 	<%end%>
 <%else%>
 	  <h1>Bienvenido a BicitMe</h1>
