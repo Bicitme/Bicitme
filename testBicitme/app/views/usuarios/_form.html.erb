@@ -37,7 +37,7 @@
   <% else %>
   <div class="field">
   <%= f.label :"Usted es un Ciclista o un Taller:" %><br>
-    <%= f.radio_button(:usuar_tipo_cod, "C") %>
+    <%= f.radio_button(:usuar_tipo_cod, "C", :checked => true) %>
     <%= f.label(:usuar_tipo_cod, "Ciclista") %><br>
     <%= f.radio_button(:usuar_tipo_cod, "E") %>
     <%= f.label(:usuar_tipo_cod, "Encargado") %>
