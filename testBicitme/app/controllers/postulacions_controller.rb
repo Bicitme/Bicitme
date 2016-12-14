@@ -24,8 +24,9 @@ class PostulacionsController < ApplicationController
   # POST /postulacions
   # POST /postulacions.json
   def create
-    @postulacion = Postulacion.new(postulacion_params)
-
+    @postulacion = Postulacion.new(postulacion_params)    
+    @postulacion.encargado_id = current_user.id
+    @postulacion.post_estado = "Espera"
     respond_to do |format|
       if @postulacion.save
         format.html { redirect_to @postulacion, notice: 'Postulacion was successfully created.' }
@@ -39,7 +40,7 @@ class PostulacionsController < ApplicationController
 
   # PATCH/PUT /postulacions/1
   # PATCH/PUT /postulacions/1.json
-  def update
+  def update      #EDITAR PARA AGREGAR QUE EL ADMIN EDITE
     respond_to do |format|
       if @postulacion.update(postulacion_params)
         format.html { redirect_to @postulacion, notice: 'Postulacion was successfully updated.' }

@@ -10,6 +10,7 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
 <div class="container">
         <%= link_to "Bicitme", root_path, id: "logo" %>
+        
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <%if current_user %>
@@ -20,6 +21,8 @@
             		<li><%= link_to "Solicitar Reparacion", vista_ciclista_path %></li>
             	<%else%>
             		<%if current_user.usuar_tipo_cod == 'E'%>
+            			
+            			<li><%= link_to "Registrar y Postular Taller", registrartaller_path %></li>
 	            		<li><%= link_to "Ver Peticiones", '#' %></li>
 	            		<li><%= link_to "Ver Reparaciones", '#' %></li>
 	            		<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>

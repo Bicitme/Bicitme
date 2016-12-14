@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :postulacions
+  get 'registrarpostulacion', to: 'postulacions#new', as: 'registrarpostulacion'
+  get 'editarpostulacion', to: 'postulacions#index', as: 'editarpostulacion'
   resources :tallers
+  get 'registrartaller', to: 'tallers#new', as: 'registrartaller'
+  get 'editartaller', to: 'tallers#index', as: 'editartaller'
   resources :comunas
   get 'registrarcomuna', to: 'comunas#new', as: 'registrarcomuna'
   get 'editarcomuna', to: 'comunas#index', as: 'editarcomuna'

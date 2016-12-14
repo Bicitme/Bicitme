@@ -10,10 +10,31 @@
       </ul>
     </div>
   <% end %>
-
+  <% if current_user.usuar_tipo_cod == 'A'%>
   <div class="field">
     <%= f.label :post_tiempo_taller %><br>
-    <%= f.number_field :post_tiempo_taller %>
+    <%= @postulacion.post_tiempo_taller %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_1 %><br>
+    <%= @postulacion.post_referencia_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_2 %><br>
+    <%= @postulacion.post_referencia_2 %>
+  </div>
+	  <div class="field">      
+	    <%= f.label :post_estado %><br>
+	    <%= f.text_field :post_estado %>
+	  </div>
+  <div class="field">
+    <%= f.label :encargado_id %><br>
+    <%= @postulacion.encargado_id %>
+  </div>
+  <%else%>
+  <div class="field">
+    <%= f.label :post_tiempo_taller %><br>
+    <%= f.text_field :post_tiempo_taller %>
   </div>
   <div class="field">
     <%= f.label :post_referencia_1 %><br>
@@ -23,18 +44,12 @@
     <%= f.label :post_referencia_2 %><br>
     <%= f.text_field :post_referencia_2 %>
   </div>
-  <div class="field">
-    <%= f.label :post_estado %><br>
-    <%= f.text_field :post_estado %>
-  </div>
-  <div class="field">
-    <%= f.label :encargado_id %><br>
-    <%= f.number_field :encargado_id %>
-  </div>
+  <%end%>
+  <!--
   <div class="field">
     <%= f.label :administrador_id %><br>
     <%= f.number_field :administrador_id %>
-  </div>
+  </div>-->
   <div class="actions">
     <%= f.submit %>
   </div>

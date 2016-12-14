@@ -25,13 +25,19 @@ class TallersController < ApplicationController
   # POST /tallers.json
   def create
     @taller = Taller.new(taller_params)
-
+    @taller.encargado_id = current_user.id
+    @taller.taller_estado = 'Inactivo'
+    @taller.taller_cant_den = 0
+    @taller.taller_cant_cont_den = 0
+    @taller.taller_calificacion = 0
     respond_to do |format|
-      if @taller.save
-        format.html { redirect_to @taller, notice: 'Taller was successfully created.' }
-        format.json { render :show, status: :created, location: @taller }
+      if Postulacion.where(["encargado_id = '%s' and post_estado = '%s", current_user.id, 'Espera']) != nil
+        if @taller.save
+          format.html { redirect_to @taller, notice: 'Taller was successfully created.' }
+          format.json { render :show, status: :created, location: @taller }
+        end
       else
-        format.html { render :new }
+        format.html { redirect_to vista_taller_path, notice: 'Taller no puede ser creado, esto se puede deber a que su postulación está pendiente.' }
         format.json { render json: @taller.errors, status: :unprocessable_entity }
       end
     end
