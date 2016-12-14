@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161213203925) do
+ActiveRecord::Schema.define(version: 20161214174907) do
 
   create_table "administradors", force: :cascade do |t|
     t.string   "admin_run",             limit: 255
@@ -52,6 +52,12 @@ ActiveRecord::Schema.define(version: 20161213203925) do
     t.datetime "updated_at",               null: false
   end
 
+  create_table "comunas", force: :cascade do |t|
+    t.string   "com_nombre", limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
   create_table "encargado_tallers", force: :cascade do |t|
     t.string   "enc_run",    limit: 255
     t.string   "enc_rol",    limit: 255
@@ -60,6 +66,34 @@ ActiveRecord::Schema.define(version: 20161213203925) do
     t.integer  "usuario_id", limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+  end
+
+  create_table "postulacions", force: :cascade do |t|
+    t.integer  "post_tiempo_taller", limit: 4
+    t.string   "post_referencia_1",  limit: 255
+    t.string   "post_referencia_2",  limit: 255
+    t.string   "post_estado",        limit: 255
+    t.integer  "encargado_id",       limit: 4
+    t.integer  "administrador_id",   limit: 4
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
+  create_table "tallers", force: :cascade do |t|
+    t.string   "taller_nombre",        limit: 255
+    t.string   "taller_patente",       limit: 255
+    t.string   "taller_direccion",     limit: 255
+    t.string   "taller_web_page",      limit: 255
+    t.integer  "taller_cant_den",      limit: 4
+    t.integer  "taller_cant_cont_den", limit: 4
+    t.string   "taller_descripcion",   limit: 255
+    t.float    "taller_calificacion",  limit: 24
+    t.string   "taller_fono",          limit: 255
+    t.string   "taller_estado",        limit: 255
+    t.integer  "comuna_id",            limit: 4
+    t.integer  "encargado_id",         limit: 4
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
   end
 
   create_table "usuarios", force: :cascade do |t|

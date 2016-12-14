@@ -41,10 +41,11 @@
 		<%else%>
 			<% if(current_user.usuar_tipo_cod == 'A')%>
 				<td><%= link_to "Registrar Administrador", new_usuario_path %><br></td>
+				<td><%= link_to "Editar comunas", editarcomuna_path %><br></td>
 				<td><%= link_to "REVISAR QUE PODÍA HACER EL ADMIN", '#' %><br></td>
 				<td><%= link_to "REVISAR", '#' %><br></td>
 				<td><%= link_to "REVISAR", '#' %><br></td>
-		
+			
 			<% end%>
 		<%end%>
 	<%end%>

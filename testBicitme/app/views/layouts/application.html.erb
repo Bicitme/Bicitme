@@ -24,7 +24,9 @@
 	            		<li><%= link_to "Ver Reparaciones", '#' %></li>
 	            		<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
 	            	<%else%>
-	            		<li><%= link_to "Registrar Administrador", new_usuario_path %></li>
+	            			<%if current_user.usuar_tipo_cod == 'A'%>
+	            				<li><%= link_to "Registrar Administrador", new_usuario_path %></li>
+	            			<% end %>
 	            	<%end%>
             	<%end%>
             	<li><%= link_to "Cerrar Sesion", logout_path %></li>

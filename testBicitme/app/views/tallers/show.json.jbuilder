@@ -1,0 +1,1 @@
+json.partial! "tallers/taller", taller: @taller

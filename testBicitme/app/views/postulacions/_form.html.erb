@@ -1,0 +1,41 @@
+<%= form_for(@postulacion) do |f| %>
+  <% if @postulacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@postulacion.errors.count, "error") %> prohibited this postulacion from being saved:</h2>
+
+      <ul>
+      <% @postulacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :post_tiempo_taller %><br>
+    <%= f.number_field :post_tiempo_taller %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_1 %><br>
+    <%= f.text_field :post_referencia_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_2 %><br>
+    <%= f.text_field :post_referencia_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :post_estado %><br>
+    <%= f.text_field :post_estado %>
+  </div>
+  <div class="field">
+    <%= f.label :encargado_id %><br>
+    <%= f.number_field :encargado_id %>
+  </div>
+  <div class="field">
+    <%= f.label :administrador_id %><br>
+    <%= f.number_field :administrador_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

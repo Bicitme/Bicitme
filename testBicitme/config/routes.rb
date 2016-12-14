@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :postulacions
+  resources :tallers
+  resources :comunas
+  get 'registrarcomuna', to: 'comunas#new', as: 'registrarcomuna'
+  get 'editarcomuna', to: 'comunas#index', as: 'editarcomuna'
   resources :administradors
   get 'bienvenida', to: 'administradors#new', as: 'bienvenida'
   resources :encargado_tallers

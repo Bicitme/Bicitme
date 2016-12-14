@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post_tiempo_taller: 1
+  post_referencia_1: MyString
+  post_referencia_2: MyString
+  post_estado: MyString
+  encargado_id: 1
+  administrador_id: 1
+
+two:
+  post_tiempo_taller: 1
+  post_referencia_1: MyString
+  post_referencia_2: MyString
+  post_estado: MyString
+  encargado_id: 1
+  administrador_id: 1
