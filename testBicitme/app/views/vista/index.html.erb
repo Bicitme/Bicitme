@@ -33,12 +33,20 @@
 
 
 	<%else%>
-		<h1>Hola <%= current_user.usuar_nom_usuario %>:</h1>
-  		<h2>
-		    Estimado, su taller aun se encuentra bajo verificacion.
-		    Puede solicitar mayor informacion a nuestro correo: info@bicitme.cl
-		    <li><%= link_to "Cerrar Sesion", logout_path, class: "btn btn-lg btn-danger"  %></li>
-		<h2>
+		<%if (current_user.usuar_tipo_cod == 'E')%>
+			<h1>Hola <%= current_user.usuar_nom_usuario %>:</h1>
+	  		<h2>
+			    Estimado, su taller aun se encuentra bajo verificacion.
+			    Puede solicitar mayor informacion a nuestro correo: info@bicitme.cl
+			    <li><%= link_to "Cerrar Sesion", logout_path, class: "btn btn-lg btn-danger"  %></li>
+			<h2>
+		<%else%>
+			<% if(current_user.usuar_tipo_cod == 'A')%>
+				<td><%= link_to "REVISAR QUE PODÍA HACER EL ADMIN", '#' %><br></td>
+				<td><%= link_to "REVISAR", '#' %><br></td>
+				<td><%= link_to "REVISAR", '#' %><br></td>
+		
+		<% end%>
 	<%end%>
 <%else%>
 	  <h1>Bienvenido a BicitMe</h1>
