@@ -29,12 +29,17 @@ class PostulacionsController < ApplicationController
     @postulacion.post_estado = "Espera"
     respond_to do |format|
       if  Postulacion.where(:encargado_id => current_user.id, :post_estado => "Espera").count == 0
-        if @postulacion.save
-          format.html { redirect_to @postulacion, notice: 'Postulacion was successfully created.' }
-          format.json { render :show, status: :created, location: @postulacion }
+        if Taller.where(:encargado_id => current_user.id).count == 0
+          format.html { redirect_to vista_taller_path, notice: 'Postulación no puede ser creada, no posee un taller' }
+          format.json { render json: @taller.errors, status: :unprocessable_entity }
         else
-          format.html { render :new }
-          format.json { render json: @postulacion.errors, status: :unprocessable_entity }
+          if @postulacion.save
+            format.html { redirect_to @postulacion, notice: 'Postulacion was successfully created.' }
+            format.json { render :show, status: :created, location: @postulacion }
+          else
+            format.html { render :new }
+            format.json { render json: @postulacion.errors, status: :unprocessable_entity }
+          end
         end
       else
         format.html { redirect_to vista_taller_path, notice: 'Postulación no puede ser creada, ya tiene una en espera' }
