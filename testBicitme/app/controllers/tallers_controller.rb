@@ -31,20 +31,20 @@ class TallersController < ApplicationController
     @taller.taller_cant_cont_den = 0
     @taller.taller_calificacion = 0
     respond_to do |format|
-    if  Postulacion.where(:encargado_id => current_user.id).count == 0
-      
-        if @taller.save
-          format.html { redirect_to @taller, notice: 'Taller was successfully created.' }
-          format.json { render :show, status: :created, location: @taller }
+      if  Taller.where(:encargado_id => current_user.id).count == 0
+        
+          if @taller.save
+            format.html { redirect_to @taller, notice: 'Taller was successfully created.' }
+            format.json { render :show, status: :created, location: @taller }
+          else
+            format.html { render :new }
+            format.json { render json: @taller.errors, status: :unprocessable_entity }
+          end
+        
         else
-          format.html { render :new }
+          format.html { redirect_to vista_taller_path, notice: 'Taller no puede ser creado, ya ha creado uno.' }
           format.json { render json: @taller.errors, status: :unprocessable_entity }
-        end
-      
-      else
-        format.html { redirect_to vista_taller_path, notice: 'Taller no puede ser creado, esto se puede deber a que su postulación está pendiente.' }
-        format.json { render json: @taller.errors, status: :unprocessable_entity }
-     end
+       end
      end
   end
 
