@@ -31,7 +31,7 @@ class TallersController < ApplicationController
     @taller.taller_cant_cont_den = 0
     @taller.taller_calificacion = 0
     respond_to do |format|
-      if Postulacion.where(["encargado_id = '%s' and post_estado = '%s", current_user.id, 'Espera']) != nil
+      if Postulacion.where(["encargado_id = '%s' AND post_estado = '%s", current_user.id, 'Espera']).nil?
         if @taller.save
           format.html { redirect_to @taller, notice: 'Taller was successfully created.' }
           format.json { render :show, status: :created, location: @taller }
