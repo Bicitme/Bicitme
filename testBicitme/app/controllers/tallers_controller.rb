@@ -31,16 +31,21 @@ class TallersController < ApplicationController
     @taller.taller_cant_cont_den = 0
     @taller.taller_calificacion = 0
     respond_to do |format|
-      if Postulacion.where(["encargado_id = '%s' AND post_estado = '%s", current_user.id, 'Espera']).nil?
+    if  Postulacion.where(:encargado_id => current_user.id).count == 0
+      
         if @taller.save
           format.html { redirect_to @taller, notice: 'Taller was successfully created.' }
           format.json { render :show, status: :created, location: @taller }
+        else
+          format.html { render :new }
+          format.json { render json: @taller.errors, status: :unprocessable_entity }
         end
+      
       else
         format.html { redirect_to vista_taller_path, notice: 'Taller no puede ser creado, esto se puede deber a que su postulación está pendiente.' }
         format.json { render json: @taller.errors, status: :unprocessable_entity }
-      end
-    end
+     end
+     end
   end
 
   # PATCH/PUT /tallers/1
