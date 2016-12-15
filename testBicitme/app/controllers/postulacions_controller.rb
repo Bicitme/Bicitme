@@ -28,7 +28,7 @@ class PostulacionsController < ApplicationController
     @postulacion.encargado_id = current_user.id
     @postulacion.post_estado = "Espera"
     respond_to do |format|
-      if  Postulacion.where(:encargado_id => current_user.id, :post_estado => "Espera").count == 0
+      if  Postulacion.where(:encargado_id => current_user.id, :post_estado => ["Espera","Activo"]).count == 0
         if Taller.where(:encargado_id => current_user.id).count == 0
           format.html { redirect_to vista_taller_path, notice: 'Postulación no puede ser creada, no posee un taller' }
           format.json { render json: @taller.errors, status: :unprocessable_entity }
@@ -42,7 +42,7 @@ class PostulacionsController < ApplicationController
           end
         end
       else
-        format.html { redirect_to vista_taller_path, notice: 'Postulación no puede ser creada, ya tiene una en espera' }
+        format.html { redirect_to vista_taller_path, notice: 'Postulación no puede ser creada, ya tiene una en espera o ya tiene un taller aceptado' }
         format.json { render json: @taller.errors, status: :unprocessable_entity }
       end
     end
