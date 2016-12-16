@@ -36,12 +36,12 @@
 
 <%= link_to 'Editar Informacion', edit_usuario_path(@usuario), class:"btn btn-lg btn-info" %> |
 <%if @usuario.usuar_tipo_cod == "C"%>
-<%= link_to '¿Desea continuar su registro?', registrartelf_path, class:"btn btn-lg btn-success" %>
-<%= link_to 'Siguiente', vista_ciclista_path, class:"btn btn-lg btn-success" %>
+<%= link_to 'Debe continuar su registro', registrartelf_path, class:"btn btn-lg btn-success" %>
+<!--<%= link_to 'Siguiente', vista_ciclista_path, class:"btn btn-lg btn-success" %>-->
 <%else%>
 	<% if @usuario.usuar_tipo_cod == 'E'%>
-		<%= link_to '¿Desea continuar su registro?', registrarenc_path, class:"btn btn-lg btn-success" %>
-		<%= link_to 'Siguiente', vista_taller_path, class:"btn btn-lg btn-success" %>  <!-- DEBERIA IR DE MANERA OBLIGATORIA A TERMINAR SU REGISTRO -->
+		<%= link_to 'Debe continuar su registro', registrarenc_path, class:"btn btn-lg btn-success" %>
+		<!--<%= link_to 'Siguiente', vista_taller_path, class:"btn btn-lg btn-success" %>  <!-- DEBERIA IR DE MANERA OBLIGATORIA A TERMINAR SU REGISTRO -->
 	<%else%>
 		<!-- AGREGAR ACCIONES PARA ADMIN-->
 	<%end%>

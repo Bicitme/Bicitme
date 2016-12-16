@@ -4,7 +4,7 @@ class TallersController < ApplicationController
   # GET /tallers
   # GET /tallers.json
   def index
-    @tallers = Taller.all
+    @tallers = Taller.where(:encargado_id => current_user.id)
   end
 
   # GET /tallers/1
