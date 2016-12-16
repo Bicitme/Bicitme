@@ -1,0 +1,49 @@
+<%= form_for(@reparacion) do |f| %>
+  <% if @reparacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reparacion.errors.count, "error") %> prohibited this reparacion from being saved:</h2>
+
+      <ul>
+      <% @reparacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rep_direccion %><br>
+    <%= f.text_field :rep_direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :rep_distancia %><br>
+    <%= f.text_field :rep_distancia %>
+  </div>
+  <div class="field">
+    <%= f.label :rep_comentario %><br>
+    <%= f.text_field :rep_comentario %>
+  </div>
+  <div class="field">
+    <%= f.label :rep_estado %><br>
+    <%= f.text_field :rep_estado %>
+  </div>
+  <div class="field">
+    <%= f.label :rep_fecha_in %><br>
+    <%= f.date_select :rep_fecha_in %>
+  </div>
+  <div class="field">
+    <%= f.label :rep_fecha_term %><br>
+    <%= f.date_select :rep_fecha_term %>
+  </div>
+  <div class="field">
+    <%= f.label :bicicleta_id %><br>
+    <%= f.number_field :bicicleta_id %>
+  </div>
+  <div class="field">
+    <%= f.label :calificacion_id %><br>
+    <%= f.number_field :calificacion_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

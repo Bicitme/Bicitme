@@ -1,0 +1,2 @@
+json.extract! presupuesto, :id, :prep_precio_min, :prep_precio_max, :prep_comentario, :prep_estado, :taller_id, :reparacion_id, :created_at, :updated_at
+json.url presupuesto_url(presupuesto, format: :json)

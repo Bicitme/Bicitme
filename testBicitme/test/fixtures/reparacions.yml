@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rep_direccion: MyString
+  rep_distancia: 1.5
+  rep_comentario: MyString
+  rep_estado: MyString
+  rep_fecha_in: 2016-12-16
+  rep_fecha_term: 2016-12-16
+  bicicleta_id: 1
+  calificacion_id: 1
+
+two:
+  rep_direccion: MyString
+  rep_distancia: 1.5
+  rep_comentario: MyString
+  rep_estado: MyString
+  rep_fecha_in: 2016-12-16
+  rep_fecha_term: 2016-12-16
+  bicicleta_id: 1
+  calificacion_id: 1
