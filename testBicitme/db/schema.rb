@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161214174907) do
+ActiveRecord::Schema.define(version: 20161216195834) do
 
   create_table "administradors", force: :cascade do |t|
     t.string   "admin_run",             limit: 255
@@ -39,6 +39,12 @@ ActiveRecord::Schema.define(version: 20161214174907) do
     t.string   "ciclista_id",     limit: 255
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+  end
+
+  create_table "calificacions", force: :cascade do |t|
+    t.float    "cal_puntuacion", limit: 24
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "ciclista", force: :cascade do |t|
@@ -77,6 +83,30 @@ ActiveRecord::Schema.define(version: 20161214174907) do
     t.integer  "administrador_id",   limit: 4
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+  end
+
+  create_table "presupuestos", force: :cascade do |t|
+    t.string   "prep_precio_min", limit: 255
+    t.integer  "prep_precio_max", limit: 4
+    t.string   "prep_comentario", limit: 255
+    t.string   "prep_estado",     limit: 255
+    t.integer  "taller_id",       limit: 4
+    t.integer  "reparacion_id",   limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
+
+  create_table "reparacions", force: :cascade do |t|
+    t.string   "rep_direccion",   limit: 255
+    t.float    "rep_distancia",   limit: 24
+    t.string   "rep_comentario",  limit: 255
+    t.string   "rep_estado",      limit: 255
+    t.date     "rep_fecha_in"
+    t.date     "rep_fecha_term"
+    t.integer  "bicicleta_id",    limit: 4
+    t.integer  "calificacion_id", limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   create_table "tallers", force: :cascade do |t|

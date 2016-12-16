@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :presupuestos
+  resources :reparacions
+  resources :reparacions
+  resources :calificacions
   resources :postulacions
   get 'registrarpostulacion', to: 'postulacions#new', as: 'registrarpostulacion'
   get 'editarpostulacion', to: 'postulacions#index', as: 'editarpostulacion'
