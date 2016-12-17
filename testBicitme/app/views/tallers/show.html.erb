@@ -54,11 +54,13 @@
   <strong>Comuna:</strong>
   <%= @taller.comuna_id %>
 </p>
-
-<!--><p>
+<%if  !Postulacion.where(:encargado_id => current_user.id, :post_estado => ["Espera","Activo"]).count == 0%>
+	<%= link_to 'Registrar postulacion', registrarpostulacion_path %>
+<%end%>
+<!--<p>
   <strong>Encargado id:</strong>
   <%= @taller.encargado_id %>
-</p>-->
+</p>
 
-<%= link_to 'Registrar postulacion', registrarpostulacion_path %>
+
 <!--<%= link_to 'Back', tallers_path %>-->

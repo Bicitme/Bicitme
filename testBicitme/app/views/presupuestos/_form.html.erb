@@ -11,6 +11,10 @@
     </div>
   <% end %>
   <% if current_user.usuar_tipo_cod == 'E'%>
+  	  <div class="field">
+	    <%= f.label :reparacion_id %><br>
+	    <%= f.collection_select( :reparacion_id, Reparacion.all, :id, "mostrar_combinado")%>
+	  </div>
 	  <div class="field">
 	    <%= f.label :prep_precio_min %><br>
 	    <%= f.text_field :prep_precio_min %>
@@ -27,7 +31,6 @@
 	    <%= f.label :taller_id %><br>
 	    <%= f.number_field :taller_id %>
 	  </div>
-	    <% @presupuesto.reparacion_id = @reparacion.id %>
   <% end %>
   <% if current_user.usuar_tipo_cod == 'C'%>
 	  <div class="field">

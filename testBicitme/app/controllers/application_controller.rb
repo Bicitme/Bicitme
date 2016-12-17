@@ -9,5 +9,6 @@ class ApplicationController < ActionController::Base
   def tipo_user
   	Usuario.where(id: session[:usuarios_tipo])
   end
+  
   helper_method :current_user
 end

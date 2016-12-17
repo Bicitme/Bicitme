@@ -26,8 +26,8 @@
             			<li><%= link_to "Registrar Taller", registrartaller_path %></li>
             			<li><%= link_to "Registrar Postulacion", registrarpostulacion_path %></li>
             			<li><%= link_to "Editar Telefono del taller", tallers_path %></li>
-	            		<li><%= link_to "Ver Peticiones", '#' %></li>
-	            		<li><%= link_to "Ver Reparaciones",  '#' %></li>
+	            		<li><%= link_to "Ver Peticiones", editarreparacion_path %></li>
+	            		<li><%= link_to "Crear Presupuestos",  presupuestos_path %></li>
 	            		<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
 	            	<%else%>
 	            			<%if current_user.usuar_tipo_cod == 'A'%>

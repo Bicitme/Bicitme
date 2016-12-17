@@ -12,7 +12,6 @@ class PresupuestosController < ApplicationController
   # GET /presupuestos/1.json
   def show
   end
-
   # GET /presupuestos/new
   def new
     @presupuesto = Presupuesto.new
@@ -26,7 +25,6 @@ class PresupuestosController < ApplicationController
   # POST /presupuestos.json
   def create
     @presupuesto = Presupuesto.new(presupuesto_params)
-
     respond_to do |format|
       if @presupuesto.save
         format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
@@ -67,7 +65,7 @@ class PresupuestosController < ApplicationController
     def set_presupuesto
       @presupuesto = Presupuesto.find(params[:id])
     end
-
+  
     # Never trust parameters from the scary internet, only allow the white list through.
     def presupuesto_params
       params.require(:presupuesto).permit(:prep_precio_min, :prep_precio_max, :prep_comentario, :prep_estado, :taller_id, :reparacion_id)

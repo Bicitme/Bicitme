@@ -32,9 +32,9 @@
         	
         	<td><%= link_to 'Destroy', reparacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> <!-- editar para que el usuario no pueda eliminar una petición aceptada-->
         <% end %>
-        <% if current_user.usuar_tipo_cod == 'E'%>
+        <!--<% if current_user.usuar_tipo_cod == 'E'%>
         	<td><%= link_to 'Seleccionar para Responder', edit_reparacion_path(reparacion) %></td> 
-        <% end %>
+        <% end %>-->
       </tr>
     <% end %>
   </tbody>
