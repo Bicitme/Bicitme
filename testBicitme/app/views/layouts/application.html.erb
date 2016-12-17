@@ -18,14 +18,16 @@
             	<%if current_user.usuar_tipo_cod == 'C' %>
             		<li><%= link_to "Ingresar Bicicleta", new_bicicletum_path %></li>
             		<li><%= link_to "Modificar Bicicleta ", bicicleta_path %></li>
-            		<li><%= link_to "Solicitar Reparacion", vista_ciclista_path %></li>
+            		<li><%= link_to "Solicitar Reparacion", reparacions_path %></li>
+            		<li><%= link_to "Ver Presupuestos", presupuestos_path%></li>
             	<%else%>
             		<%if current_user.usuar_tipo_cod == 'E'%>
             			
             			<li><%= link_to "Registrar Taller", registrartaller_path %></li>
             			<li><%= link_to "Registrar Postulacion", registrarpostulacion_path %></li>
+            			<li><%= link_to "Editar Telefono del taller", tallers_path %></li>
 	            		<li><%= link_to "Ver Peticiones", '#' %></li>
-	            		<li><%= link_to "Ver Reparaciones", '#' %></li>
+	            		<li><%= link_to "Ver Reparaciones",  '#' %></li>
 	            		<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
 	            	<%else%>
 	            			<%if current_user.usuar_tipo_cod == 'A'%>

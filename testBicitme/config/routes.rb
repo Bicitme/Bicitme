@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
   resources :presupuestos
+  get 'registrarpresupuesto', to: 'presupuestos#new', as: 'registrarpresupuesto'
+  get 'editarpresupuesto', to: 'presupuestos#index', as: 'editarpresupuesto'
   resources :reparacions
-  resources :reparacions
+  get 'registrarreparacion', to: 'reparacions#new', as: 'registrarreparacion'
+  get 'editarreparacion', to: 'reparacions#index', as: 'editarreparacion'
   resources :calificacions
+  get 'registrarcalificacion', to: 'calificacions#new', as: 'registrarcalificacion'
+  get 'editarcalificacion', to: 'calificacions#index', as: 'editarcalificacion'
   resources :postulacions
   get 'registrarpostulacion', to: 'postulacions#new', as: 'registrarpostulacion'
   get 'editarpostulacion', to: 'postulacions#index', as: 'editarpostulacion'

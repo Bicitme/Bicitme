@@ -62,6 +62,7 @@ class BicicletaController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -73,4 +74,5 @@ class BicicletaController < ApplicationController
     def bicicletum_params
       params.require(:bicicletum).permit(:bic_id, :bic_marca, :bic_modelo, :bic_tipo, :bic_aro, :bic_velocidades, :bic_color_princ, :bic_img_1, :bic_img_2, :bic_num_serie, :bic_estado_robo, :bic_cic_run)
     end
+    
 end

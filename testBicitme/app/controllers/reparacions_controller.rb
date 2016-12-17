@@ -5,6 +5,7 @@ class ReparacionsController < ApplicationController
   # GET /reparacions.json
   def index
     @reparacions = Reparacion.all
+    @bicicleta = Bicicletum.where (["ciclista_id = '%s'", current_user.id])
   end
 
   # GET /reparacions/1
@@ -25,7 +26,10 @@ class ReparacionsController < ApplicationController
   # POST /reparacions.json
   def create
     @reparacion = Reparacion.new(reparacion_params)
-
+    @reparacion.rep_estado = 'Espera'
+    @reparacion.rep_fecha_in=Time.new
+    @reparacion.rep_fecha_term="0000/00/00"
+    @reparacion.bicicleta_id = 
     respond_to do |format|
       if @reparacion.save
         format.html { redirect_to @reparacion, notice: 'Reparacion was successfully created.' }

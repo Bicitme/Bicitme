@@ -23,7 +23,7 @@
     <%= f.label :rep_comentario %><br>
     <%= f.text_field :rep_comentario %>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :rep_estado %><br>
     <%= f.text_field :rep_estado %>
   </div>
@@ -31,17 +31,32 @@
     <%= f.label :rep_fecha_in %><br>
     <%= f.date_select :rep_fecha_in %>
   </div>
+  
   <div class="field">
     <%= f.label :rep_fecha_term %><br>
     <%= f.date_select :rep_fecha_term %>
   </div>
+ 
   <div class="field">
     <%= f.label :bicicleta_id %><br>
-    <%= f.number_field :bicicleta_id %>
+    <%= f.collection_select( :bicicleta_id, Bicicletum.where(:ciclista_id => current_user.id), :id, :bic_modelo,{}, {:multiple => true})%>
+  </div>
+  	<div class="field">
+  		<%= f.label :"Usted es un Ciclista o un Taller:" %><br>
+    	<%= f.radio_button(:usuar_tipo_cod, "C", :checked => true) %>
+    	<%= f.label(:usuar_tipo_cod, "Ciclista") %><br>
+  </div>-->
+  <!-- <div class="field">
+  	<%= f.label :bicicleta_id  %><br>
+    <%= f.number_field  :bicicleta_id%>
   </div>
   <div class="field">
     <%= f.label :calificacion_id %><br>
     <%= f.number_field :calificacion_id %>
+  </div>-->
+  <div class="field">
+    <%= f.label :bicicleta_id %><br>
+    <%= f.collection_select( :bicicleta_id, Bicicletum.where(:ciclista_id => current_user.id), :id, "combined_value")%>
   </div>
   <div class="actions">
     <%= f.submit %>
