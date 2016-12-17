@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       else
         if (usuario.usuar_tipo_cod == 'E')
           if (EncargadoTaller.where(:usuario_id => usuario.id).count > 0) #.exists?(usuario.id))
-            redirect_to vista_encargado_taller_path
+            redirect_to vista_taller_path
           else
             redirect_to registrarenc_path
           end
