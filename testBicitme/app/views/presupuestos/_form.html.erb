@@ -10,31 +10,50 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :prep_precio_min %><br>
-    <%= f.text_field :prep_precio_min %>
-  </div>
-  <div class="field">
-    <%= f.label :prep_precio_max %><br>
-    <%= f.number_field :prep_precio_max %>
-  </div>
-  <div class="field">
-    <%= f.label :prep_comentario %><br>
-    <%= f.text_field :prep_comentario %>
-  </div>
-  <div class="field">
-    <%= f.label :prep_estado %><br>
-    <%= f.text_field :prep_estado %>
-  </div>
-  <div class="field">
-    <%= f.label :taller_id %><br>
-    <%= f.number_field :taller_id %>
-  </div>
-  <div class="field">
-    <%= f.label :reparacion_id %><br>
-    <%= f.number_field :reparacion_id %>
-  </div>
+  <% if current_user.usuar_tipo_cod == 'E'%>
+	  <div class="field">
+	    <%= f.label :prep_precio_min %><br>
+	    <%= f.text_field :prep_precio_min %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_precio_max %><br>
+	    <%= f.number_field :prep_precio_max %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_comentario %><br>
+	    <%= f.text_field :prep_comentario %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :taller_id %><br>
+	    <%= f.number_field :taller_id %>
+	  </div>
+	    <% @presupuesto.reparacion_id = @reparacion.id %>
+  <% end %>
+  <% if current_user.usuar_tipo_cod == 'C'%>
+	  <div class="field">
+	    <%= f.label :prep_precio_min %><br>
+	    <%= @presupuesto.prep_precio_min %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_precio_max %><br>
+	    <%= @presupuesto.prep_precio_max %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_comentario %><br>
+	    <%= @presupuesto.prep_comentario %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_estado %><br>
+	    <%= f.text_field :prep_estado %>
+	  </div>
+  	  <div class="field">
+	    <%= f.label :taller_id %><br>
+	    <%= @presupuesto.taller_id %>
+	  </div>
+  <%end%>
+  
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>

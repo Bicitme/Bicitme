@@ -4,7 +4,8 @@ class PresupuestosController < ApplicationController
   # GET /presupuestos
   # GET /presupuestos.json
   def index
-    @presupuestos = Presupuesto.all
+    @presupuestos = Presupuesto.where (["taller_id = '%s'", current_user.id])
+    @reparacions = Reparacion.all #editar solo debe ver las suyas
   end
 
   # GET /presupuestos/1
