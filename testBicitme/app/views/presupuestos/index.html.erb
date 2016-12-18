@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Presupuestos</h1>
-
-<table>
+<%if current_user.usuar_tipo_cod == 'E'%>
+	    <table>
   <thead>
     <tr>
       <th>Prep precio min</th>
@@ -14,24 +14,65 @@
       <th colspan="3"></th>
     </tr>
   </thead>
+	<% end %>
+<%if current_user.usuar_tipo_cod == 'C'%>
+	    <table>
+  <thead>
+    <tr>
+    	<th>Reparacion Comentario</th>
+      <th>Bicicleta Marca</th>
+      <th>Bicicleta Modelo</th>
+      <th>Color Principal</th>
+      <th>Prep precio min</th>
+      <th>Prep precio max</th>
+      <th>Prep comentario</th>
+      <th>Prep estado</th>
+      <th>Taller</th>
+      <th>Reparacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+	<% end %>
 
   <tbody>
-    <% @presupuestos.each do |presupuesto| %>
-      <tr>
-        <td><%= presupuesto.prep_precio_min %></td>
-        <td><%= presupuesto.prep_precio_max %></td>
-        <td><%= presupuesto.prep_comentario %></td>
-        <td><%= presupuesto.prep_estado %></td>
-        <td><%= presupuesto.taller_id %></td>
-        <td><%= presupuesto.reparacion_id %></td> 
-        <td><%= link_to 'Show', presupuesto %></td>
-        <!--<td><%= link_to 'Edit', edit_presupuesto_path(presupuesto) %></td>
-        <td><%= link_to 'Destroy', presupuesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-      </tr>
-    <% end %>
+  	<%if current_user.usuar_tipo_cod == 'C'%>
+	    <% @presupuestos.each do |presupuesto| %>
+	      <tr>
+	      	<td><%= presupuesto.rep_comentario %></td>
+	      	<td><%= presupuesto.bic_marca %></td>
+	      	<td><%= presupuesto.bic_modelo %></td>
+	      	<td><%= presupuesto.bic_color_princ %></td>
+	      	<td><%= presupuesto.prep_precio_min %></td>
+	        <td><%= presupuesto.prep_precio_max %></td>
+	        <td><%= presupuesto.prep_comentario %></td>
+	        <td><%= presupuesto.prep_estado %></td>
+	        <td><%= presupuesto.taller_nombre %></td>
+	        <td><%= presupuesto.reparacion_id %></td> 
+	        <td><%= link_to 'Show', presupuesto %></td>
+	        <!--<td><%= link_to 'Edit', edit_presupuesto_path(presupuesto) %></td>
+	        <td><%= link_to 'Destroy', presupuesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+	      </tr>
+	    <% end %>
+	<% end %>
+	<%if current_user.usuar_tipo_cod == 'E'%>
+	    <% @presupuestos.each do |presupuesto| %>
+	      <tr>
+	        <td><%= presupuesto.prep_precio_min %></td>
+	        <td><%= presupuesto.prep_precio_max %></td>
+	        <td><%= presupuesto.prep_comentario %></td>
+	        <td><%= presupuesto.prep_estado %></td>
+	        <td><%= presupuesto.taller_nombre %></td>
+	        <td><%= presupuesto.reparacion_id %></td> 
+	        <td><%= link_to 'Show', presupuesto %></td>
+	        <!--<td><%= link_to 'Edit', edit_presupuesto_path(presupuesto) %></td>
+	        <td><%= link_to 'Destroy', presupuesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+	      </tr>
+	    <% end %>
+	<% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Presupuesto', new_presupuesto_path %>
+<%if current_user.usuar_tipo_cod == 'E'%>
+	<%= link_to 'New Presupuesto', new_presupuesto_path %>
+<% end %>

@@ -4,9 +4,16 @@ class PresupuestosController < ApplicationController
   # GET /presupuestos
   # GET /presupuestos.json
   def index
-    @taller = Taller.find_by(:encargado_id => current_user.id)
-    @presupuestos = Presupuesto.where(:taller_id => @taller.id) 
-    @reparacions = Reparacion.all #editar solo debe ver las suyas
+    if (current_user.usuar_tipo_cod == 'C')
+      @presupuestos = Presupuesto.find_by_sql ["SELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = :user_id and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id", { :user_id => current_user.id }]
+      #@presupuestos = Presupuesto.all
+    end
+    if (current_user.usuar_tipo_cod == 'E')  
+      @taller = Taller.find_by(:encargado_id => current_user.id)
+      @presupuestos = Presupuesto.where(:taller_id => @taller.id) 
+      @reparacions = Reparacion.all #editar solo debe ver las suyas
+    end
+  
   end
 
   # GET /presupuestos/1
@@ -30,7 +37,7 @@ class PresupuestosController < ApplicationController
     @taller = Taller.find_by(:encargado_id => current_user.id)
     @presupuesto.taller_id = @taller.id
     respond_to do |format|
-      if !Presupuesto.exists?(:reparacion_id => @presupuesto.reparacion_id)
+      if !Presupuesto.exists?(:reparacion_id => @presupuesto.reparacion_id, :taller_id => @taller.id)
         if Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 1
           if @presupuesto.save
             format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
