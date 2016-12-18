@@ -1,0 +1,2091 @@
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:32:41 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (11.1ms)
+  Rendered bicicleta/new.html.erb within layouts/application (13.5ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11433ms (Views: 11418.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:32:52 -0300
+Processing by VistaController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (4.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:32:52 -0300
+Processing by VistaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:32:52 -0300
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:33:00 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (5.6ms)
+  Rendered bicicleta/new.html.erb within layouts/application (6.1ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:33:00 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:33:06 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.2ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (7.9ms)
+  Rendered reparacions/new.html.erb within layouts/application (8.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 61ms (Views: 48.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:33:08 -0300
+Processing by BicicletaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mBicicletum Load (0.1ms)[0m  SELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:33:09 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (4.3ms)
+  Rendered bicicleta/new.html.erb within layouts/application (4.8ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 103ms (Views: 102.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:33:11 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.2ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (6.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:33:14 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (5.8ms)
+  Rendered reparacions/new.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:33:15 -0300
+Processing by BicicletaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mBicicletum Load (0.1ms)[0m  SELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (3.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:33:16 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBicicletum Load (0.2ms)[0m  SELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered reparacions/_form.html.erb (5.2ms)
+  Rendered reparacions/new.html.erb within layouts/application (6.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:33:17 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPresupuesto Load (0.1ms)[0m  SELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 55ms (Views: 44.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:33:19 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (6.5ms)
+  Rendered reparacions/new.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:33:20 -0300
+Processing by BicicletaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mBicicletum Load (0.1ms)[0m  SELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:33:20 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (3.9ms)
+  Rendered bicicleta/new.html.erb within layouts/application (4.6ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:33:21 -0300
+Processing by VistaController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:33:31 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.1ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (4.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:35:53 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (6.3ms)
+  Rendered bicicleta/new.html.erb within layouts/application (6.7ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:35:53 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:35:54 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (9.6ms)
+  Rendered reparacions/new.html.erb within layouts/application (10.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:35:55 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.1ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:38:17 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPresupuesto Load (0.3ms)[0m  SELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (9.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 64ms (Views: 56.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:38:17 -0300
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:38:34 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.4ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.3ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (4.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 58ms (Views: 48.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:38:34 -0300
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:38:35 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPresupuesto Load (0.1ms)[0m  SELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:38:35 -0300
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:38:39 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.9ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 56ms (Views: 44.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:38:39 -0300
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:38:43 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (6.7ms)
+  Rendered bicicleta/new.html.erb within layouts/application (7.3ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:38:44 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:38:46 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.3ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (10.4ms)
+  Rendered reparacions/new.html.erb within layouts/application (11.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:38:49 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (4.0ms)
+  Rendered reparacions/new.html.erb within layouts/application (4.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:38:49 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.1ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:38:51 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (4.0ms)
+  Rendered bicicleta/new.html.erb within layouts/application (4.5ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:38:52 -0300
+Processing by VistaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (3.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:38:54 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (6.2ms)
+  Rendered reparacions/new.html.erb within layouts/application (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:38:55 -0300
+Processing by VistaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 40.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:38:56 -0300
+Processing by VistaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:38:58 -0300
+Processing by VistaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:38:59 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mReparacion Load (0.2ms)[0m  [1mSELECT `reparacions`.* FROM `reparacions`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:40:43 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.2ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (7.1ms)
+  Rendered reparacions/new.html.erb within layouts/application (7.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:40:44 -0300
+Processing by VistaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:40:47 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBicicletum Load (0.2ms)[0m  SELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered reparacions/_form.html.erb (7.0ms)
+  Rendered reparacions/new.html.erb within layouts/application (8.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:40:48 -0300
+Processing by VistaController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:40:49 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mReparacion Load (0.1ms)[0m  SELECT `reparacions`.* FROM `reparacions`
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered reparacions/index.html.erb within layouts/application (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:41:52 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mReparacion Load (0.2ms)[0m  [1mSELECT `reparacions`.* FROM `reparacions`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/index.html.erb within layouts/application (5.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:41:52 -0300
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:43:50 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  Rendered reparacions/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/pika/web/github/app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+... una nueva reparación', class="btn btn-lg btn-success" regi...
+...                               ^
+/home/pika/web/github/app/views/reparacions/index.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ccess" registrarreparacion_path );@output_buffer.safe_append...
+...                               ^):
+  app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+  app/views/reparacions/index.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (20.6ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:44:40 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  Rendered reparacions/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/pika/web/github/app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+...egistrarreparacion_path, class="btn btn-lg btn-success"  );@...
+...                               ^):
+  app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+
+
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.9ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.3ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:44:51 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[36mUsuario Load (1.6ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  Rendered reparacions/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.6ms)
+
+SyntaxError (/home/pika/web/github/app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+...egistrarreparacion_path, class= "btn btn-lg btn-success"  );...
+...                               ^):
+  app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+
+
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.3ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:45:05 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  Rendered reparacions/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/pika/web/github/app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+...egistrarreparacion_path, class= "btn btn-lg btn-primary"  );...
+...                               ^):
+  app/views/reparacions/index.html.erb:43: syntax error, unexpected '='
+
+
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.9ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/pika/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.6ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:45:17 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mReparacion Load (0.6ms)[0m  SELECT `reparacions`.* FROM `reparacions`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered reparacions/index.html.erb within layouts/application (5.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:45:17 -0300
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:45:24 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.2ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2016-12-18 15:45:24 -0300
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:45:56 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mReparacion Load (0.1ms)[0m  SELECT `reparacions`.* FROM `reparacions`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered reparacions/index.html.erb within layouts/application (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:56 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:45:57 -0300
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:46:06 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (3.5ms)
+  Rendered bicicleta/new.html.erb within layouts/application (4.9ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:46:07 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.2ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:46:08 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.7ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (10.9ms)
+  Rendered reparacions/new.html.erb within layouts/application (11.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:46:09 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.4ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.1ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:46:31 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPresupuesto Load (0.3ms)[0m  SELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (8.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 67ms (Views: 54.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:46:31 -0300
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:46:36 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.1ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (5.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:46:36 -0300
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:56:28 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:56:29 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (3.7ms)
+  Rendered reparacions/new.html.erb within layouts/application (4.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 15:56:29 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.1ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (4.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:56:34 -0300
+Processing by VistaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/editarreparacion" for ::1 at 2016-12-18 15:56:36 -0300
+Processing by ReparacionsController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mReparacion Load (0.1ms)[0m  SELECT `reparacions`.* FROM `reparacions`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered reparacions/index.html.erb within layouts/application (3.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-12-18 15:56:39 -0300
+Processing by VistaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered vista/index.html.erb within layouts/application (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:56:41 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (6.0ms)
+  Rendered reparacions/new.html.erb within layouts/application (6.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/editartelf" for ::1 at 2016-12-18 15:56:44 -0300
+Processing by CiclistaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCiclistum Load (0.1ms)[0m  SELECT `ciclista`.* FROM `ciclista` WHERE (usuario_id = '1')
+  Rendered ciclista/index.html.erb within layouts/application (6.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/editartelf" for ::1 at 2016-12-18 15:57:53 -0300
+Processing by CiclistaController#index as HTML
+  [1m[36mUsuario Load (0.6ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCiclistum Load (0.1ms)[0m  SELECT `ciclista`.* FROM `ciclista` WHERE (usuario_id = '1')
+  Rendered ciclista/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/administradors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:53 -0300
+
+
+Started GET "/assets/ciclista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:53 -0300
+
+
+Started GET "/assets/comunas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:53 -0300
+
+
+Started GET "/assets/calificacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:53 -0300
+
+
+Started GET "/assets/bicicleta.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:53 -0300
+
+
+Started GET "/assets/bootstrap.self-f1a348f64b12c5b5ec2a8d48e4216cd95efbf6b49d00ef1bb15504f754288e31.css?body=1" for ::1 at 2016-12-18 15:57:53 -0300
+
+
+Started GET "/assets/application.self-53e844c9841240c07a84580153af58eb96cb92819d38fe9875c806cdd0306d4c.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/custom.self-a0bbf5b8787184fcead0965cdada55e0677f84df324e4cb69eb6e6773613922b.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/encargado_tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/postulacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/presupuestos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/reparacions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/scaffolds.self-84192714aa391bbf84df706e859b00ec23ab72c1912b05e52bd9fc463fba2017.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/tallers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/vista.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-12-18 15:57:54 -0300
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 15:57:59 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (2.9ms)
+  Rendered bicicleta/new.html.erb within layouts/application (3.3ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 15:58:00 -0300
+Processing by BicicletaController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mBicicletum Load (0.1ms)[0m  SELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 15:58:01 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBicicletum Load (0.1ms)[0m  SELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered reparacions/_form.html.erb (5.5ms)
+  Rendered reparacions/new.html.erb within layouts/application (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bicicleta/new" for ::1 at 2016-12-18 16:05:58 -0300
+Processing by BicicletaController#new as HTML
+  Rendered bicicleta/_form.html.erb (3.1ms)
+  Rendered bicicleta/new.html.erb within layouts/application (3.5ms)
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bicicleta" for ::1 at 2016-12-18 16:05:59 -0300
+Processing by BicicletaController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE (ciclista_id = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered bicicleta/index.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registrarreparacion" for ::1 at 2016-12-18 16:05:59 -0300
+Processing by ReparacionsController#new as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mBicicletum Load (0.1ms)[0m  [1mSELECT `bicicleta`.* FROM `bicicleta` WHERE `bicicleta`.`ciclista_id` = '1'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered reparacions/_form.html.erb (3.9ms)
+  Rendered reparacions/new.html.erb within layouts/application (4.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/presupuestos" for ::1 at 2016-12-18 16:06:01 -0300
+Processing by PresupuestosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mPresupuesto Load (0.1ms)[0m  [1mSELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = 1 and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered presupuestos/index.html.erb within layouts/application (5.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1  ORDER BY `usuarios`.`id` ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 0.5ms)
