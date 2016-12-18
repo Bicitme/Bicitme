@@ -1,34 +1,29 @@
 <%= form_for(@reparacion) do |f| %>
   <% if @reparacion.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@reparacion.errors.count, "error") %> prohibited this reparacion from being saved:</h2>
-
-      <ul>
-      <% @reparacion.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  	  <h2> No se pudo completar la tarea.</h2>
     </div>
   <% end %>
+  
   <% if current_user.usuar_tipo_cod == 'C'%>
 	  <div class="field">
-	    <%= f.label :rep_direccion %><br>
-	    <%= f.text_field :rep_direccion %>
+	    <%= f.label :Direccion %><br>
+	    <%= f.text_field :rep_direccion, class:"form-control", required: true %>
 	  </div>
 	  <div class="field">
-	    <%= f.label :rep_distancia %><br>
-	    <%= f.text_field :rep_distancia %>
+	    <%= f.label :Distancia %><br>
+	    <%= f.text_field :rep_distancia, class:"form-control", required: true %>
 	  </div>
 	  <div class="field">
-	    <%= f.label :rep_comentario %><br>
-	    <%= f.text_field :rep_comentario %>
+	    <%= f.label :Comentario %><br>
+	    <%= f.text_field :rep_comentario, class:"form-control", required: true %>
 	  </div>
 	  <div class="field">
 	    <%= f.label :bicicleta_id %><br>
 	    <%= f.collection_select( :bicicleta_id, Bicicletum.where(:ciclista_id => current_user.id), :id, "combined_value")%>
 	  </div>
 	  <div class="actions">
-	    <%= f.submit %>
+	    <%= f.submit "Solicitar Reparacion", class:"btn btn-success"%>
 	  </div>
   <%end%>
   

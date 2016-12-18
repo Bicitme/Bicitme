@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Ciclista run:</strong>
   <%= @ciclistum.cic_run %>
@@ -30,5 +28,5 @@
   <%= @ciclistum.usuario_id %>
 </p>
 -->
-<%= link_to 'Edit', edit_ciclistum_path(@ciclistum) %> |
-<%= link_to 'Back', ciclista_path %>
+<%= link_to 'Editar', edit_ciclistum_path(@ciclistum), class:"btn btn-lg btn-info" %> |
+<%= link_to 'Terminar Registro', vista_ciclista_path, class:"btn btn-lg btn-success" %>

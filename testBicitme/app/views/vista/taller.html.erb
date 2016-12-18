@@ -1,5 +1,5 @@
 <div class="center jumbotron">
-	<h1>Bienvenido <%= current_user.usuar_nom_usuario %> a BicitMe:</h1>
+	<h1>BORRAR ESTA PAGINA <%= current_user.usuar_nom_usuario %> a BicitMe:</h1>
 	<%if  Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 0%>
 	<h2>
 		    Estimado, su taller aun se encuentra bajo verificacion.
@@ -14,19 +14,10 @@
     </thead>
     <tbody>
       <p id="notice"><%= notice %></p>
-      <tr>
-        <td><%= link_to "Ver Peticiones ", reparacions_path %><br></td>
-      </tr>
-      <tr>
-        <td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td>
-      </tr>
-      <tr>
-        <td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td>
-      </tr>
-      <tr>
-        <td><%= link_to "Ver mi taller", tallers_path %><br></td>
-      </tr>
-
+      <tr><td><%= link_to "Ver Peticiones ", reparacions_path %><br></td></tr>
+      <tr><td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td></tr>
+      <tr><td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td></tr>
+      <tr><td><%= link_to "Ver mi taller", tallers_path %><br></td></tr>
     </tbody>
   </table>
   	<li><%= link_to "Cerrar Sesion", logout_path, class: "btn btn-lg btn-danger"  %></li>

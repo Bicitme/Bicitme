@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       session[:usuarios_id] = usuario.id
       if usuario.usuar_tipo_cod == 'C'   #Editar para que el admin llegue al seteo de su cuenta.
         if (Ciclistum.where(:usuario_id => usuario.id).count >0) # exists?(usuario.id))
-          redirect_to vista_ciclista_path
+          redirect_to vista_index_path
         else
           redirect_to new_ciclistum_path
         end
@@ -15,14 +15,14 @@ class SessionsController < ApplicationController
       else
         if (usuario.usuar_tipo_cod == 'E')
           if (EncargadoTaller.where(:usuario_id => usuario.id).count > 0) #.exists?(usuario.id))
-            redirect_to vista_taller_path
+            redirect_to vista_index_path
           else
             redirect_to registrarenc_path
           end
           
         else
           if (Administrador.where(:usuario_id => usuario.id).count > 0) #.exists?(usuario.id)) #revisar correctitud
-            redirect_to administradors_path
+            redirect_to vista_index_path
           else
             redirect_to bienvenida_path
           end

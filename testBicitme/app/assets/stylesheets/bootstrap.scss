@@ -214,7 +214,7 @@ th {
   }
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #000;
 
     page-break-inside: avoid;
   }
@@ -3116,7 +3116,7 @@ fieldset[disabled] .btn-default.focus {
   background-color: #333;
 }
 .btn-primary {
-  color: #fff;
+  color: #000;
   background-color: #337ab7;
   border-color: #2e6da4;
 }

@@ -12,7 +12,7 @@
 
 <p>
   <strong>Tipo:</strong>
-    <%if  @bicicletum.bic_tipo == 'P'%>
+    <%if  @bicicletum.bic_tipo == 'C'%>
     	Bicicleta de Carretera o Pista.
   	<%else%>
         <%if  @bicicletum.bic_tipo == 'M'%>
@@ -58,4 +58,4 @@
 </p>
 
 <%= link_to "Editar Bicicleta ", edit_bicicletum_path(@bicicletum), class: "btn btn-lg btn-primary" %><br>
-<%= link_to "Confirmar", new_bicicletum_path, class: "btn btn-lg btn-success" %><br>
+<%= link_to "Confirmar", bicicleta_path, class: "btn btn-lg btn-success" %><br>

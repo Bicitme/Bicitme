@@ -7,44 +7,42 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header class="navbar navbar-fixed-top navbar-inverse">
-<div class="container">
-        <%= link_to "Bicitme", root_path, id: "logo" %>
-        
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <%if current_user %>
-            	<li> <h3>Hola <%= current_user.usuar_nom_usuario %></h3></li>
-            	<%if current_user.usuar_tipo_cod == 'C' %>
-            		<li><%= link_to "Ingresar Bicicleta", new_bicicletum_path %></li>
-            		<li><%= link_to "Modificar Bicicleta ", bicicleta_path %></li>
-            		<li><%= link_to "Solicitar Reparacion", reparacions_path %></li>
-            		<li><%= link_to "Ver Presupuestos", presupuestos_path%></li>
-            	<%else%>
-            		<%if current_user.usuar_tipo_cod == 'E'%>
-            			
-            			<li><%= link_to "Registrar Taller", registrartaller_path %></li>
-            			<li><%= link_to "Registrar Postulacion", registrarpostulacion_path %></li>
-            			<li><%= link_to "Editar Telefono del taller", tallers_path %></li>
-	            		<li><%= link_to "Ver Peticiones", editarreparacion_path %></li>
-	            		<li><%= link_to "Crear Presupuestos",  presupuestos_path %></li>
-	            		<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
-	            	<%else%>
-	            			<%if current_user.usuar_tipo_cod == 'A'%>
-	            				<li><%= link_to "Registrar Administrador", new_usuario_path %></li>
-	            			<% end %>
-	            	<%end%>
-            	<%end%>
-            	<li><%= link_to "Cerrar Sesion", logout_path %></li>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <%= link_to "BicitMe", root_path, id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <%if current_user %>
+            <%if current_user.usuar_tipo_cod == 'C' %>
+            	<li><%= link_to "Ingresar Bicicleta", new_bicicletum_path %></li>
+            	<li><%= link_to "Modificar Bicicleta ", bicicleta_path %></li>
+            	<li><%= link_to "Solicitar Reparacion", registrarreparacion_path %></li>
+            	<li><%= link_to "Ver Presupuestos", presupuestos_path%></li>
             <%else%>
-                <li><%= link_to "Quienes Somos",   '#' %></li>
-            	<li><%= link_to "Preguntas Frecuentes",   '#' %></li>
-            	<li><%= link_to "Iniciar Sesion", login_path %></li>
-            <% end %>
-          </ul>
-        </nav>
-      </div>
-</header>
+              <%if current_user.usuar_tipo_cod == 'E'%>
+              	<li><%= link_to "Registrar Taller", registrartaller_path %></li>
+              	<li><%= link_to "Registrar Postulacion", registrarpostulacion_path %></li>
+              	<li><%= link_to "Editar Telefono del taller", tallers_path %></li>
+  	          	<li><%= link_to "Ver Peticiones", editarreparacion_path %></li>
+  	          	<li><%= link_to "Crear Presupuestos",  presupuestos_path %></li>
+  	          	<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
+	            <%else%>
+	          	  <%if current_user.usuar_tipo_cod == 'A'%>
+	            		<li><%= link_to "Registrar Administrador", new_usuario_path %></li>
+                  <li><%= link_to "Administrar Comunas", comunas_path %></li>
+	            	<%end%>
+	            <%end%>
+            <%end%>
+            <li><%= link_to "Cerrar Sesion", logout_path %></li>
+          <%else%>
+            <li><%= link_to "Quienes Somos",   '#' %></li>
+          	<li><%= link_to "Preguntas Frecuentes",   '#' %></li>
+           	<li><%= link_to "Iniciar Sesion", login_path %></li>
+          <%end%>
+        </ul>
+      </nav>
+    </div>
+  </header>
     <div class="container">
       <div class="left jumbotron">
       <%= yield %>
