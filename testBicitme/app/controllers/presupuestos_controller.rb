@@ -4,7 +4,8 @@ class PresupuestosController < ApplicationController
   # GET /presupuestos
   # GET /presupuestos.json
   def index
-    @presupuestos = Presupuesto.where (["taller_id = '%s'", current_user.id])
+    @taller = Taller.find_by(:encargado_id => current_user.id)
+    @presupuestos = Presupuesto.where(:taller_id => @taller.id) 
     @reparacions = Reparacion.all #editar solo debe ver las suyas
   end
 
@@ -25,13 +26,21 @@ class PresupuestosController < ApplicationController
   # POST /presupuestos.json
   def create
     @presupuesto = Presupuesto.new(presupuesto_params)
+    @presupuesto.prep_estado = "Espera"
+    @taller = Taller.find_by(:encargado_id => current_user.id)
+    @presupuesto.taller_id = @taller.id
     respond_to do |format|
-      if @presupuesto.save
-        format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
-        format.json { render :show, status: :created, location: @presupuesto }
-      else
-        format.html { render :new }
-        format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
+      if Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 1
+        if @presupuesto.save
+          format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
+          format.json { render :show, status: :created, location: @presupuesto }
+        else
+          format.html { render :new }
+          format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
+        end
+        else
+          format.html { redirect_to vista_taller_path, notice: 'No puede crear presupuestos, debido a que no tiene un taller activo' }
+          format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
       end
     end
   end
