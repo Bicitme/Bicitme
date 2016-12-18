@@ -11,7 +11,7 @@
       <th>Fecha termino</th>
       <th>Bicicleta</th>
       <th>Calificacion</th>
-      <th colspan="3"></th>
+      <th>Eliminar</th>
     </tr>
   </thead>
 
@@ -26,12 +26,13 @@
         <td><%= reparacion.rep_fecha_term %></td>
         <td><%= reparacion.bicicleta_id %></td>
         <td><%= reparacion.calificacion_id %></td>
-        <% if current_user.usuar_tipo_cod == 'C'%>
-        	<td><%= link_to 'Destroy', reparacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
-          <!-- editar para que el usuario no pueda eliminar una petición aceptada-->
+        <% if reparacion.rep_estado == 'Espera'%>
+           <td><%= link_to '', reparacion, method: :delete, class: "glyphicon glyphicon-remove" %></td>
+        <%else%>
+           <td><%= link_to '', reparacion, method: :delete, class: "glyphicon glyphicon-ok " %></td> 
         <% end %>
         <!--<% if current_user.usuar_tipo_cod == 'E'%>
-        	<td><%= link_to 'Seleccionar para Responder', edit_reparacion_path(reparacion) %></td> 
+          <td><%= link_to 'Seleccionar para Responder', edit_reparacion_path(reparacion) %></td> 
         <% end %>-->
       </tr>
     <% end %>
@@ -40,5 +41,5 @@
 
 <br>
 <% if current_user.usuar_tipo_cod == 'C'%>
-	<%= link_to 'Solicitar una nueva reparación', registrarreparacion_path, class: "btn btn-lg btn-primary"  %>
+  <%= link_to 'Solicitar una nueva reparación', registrarreparacion_path, class: "btn btn-lg btn-primary"  %>
 <% end %>

@@ -31,8 +31,8 @@ class ReparacionsController < ApplicationController
     @reparacion.rep_fecha_term="0000/00/00"
     respond_to do |format|
       if @reparacion.save
-        format.html { redirect_to @reparacion, notice: 'Reparacion was successfully created.' }
-        format.json { render :show, status: :created, location: @reparacion }
+        format.html { redirect_to reparacions_url, notice: 'Reparacion was successfully created.' }
+        format.json { render :index, status: :created, location: @reparacion }
       else
         format.html { render :new }
         format.json { render json: @reparacion.errors, status: :unprocessable_entity }
@@ -45,8 +45,8 @@ class ReparacionsController < ApplicationController
   def update
     respond_to do |format|
       if @reparacion.update(reparacion_params)
-        format.html { redirect_to @reparacion, notice: 'Reparacion was successfully updated.' }
-        format.json { render :show, status: :ok, location: @reparacion }
+        format.html { redirect_to reparacions_url, notice: 'Reparacion was successfully updated.' }
+        format.json { render :index, status: :ok, location: @reparacion }
       else
         format.html { render :edit }
         format.json { render json: @reparacion.errors, status: :unprocessable_entity }

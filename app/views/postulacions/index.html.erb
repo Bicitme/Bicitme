@@ -1,14 +1,12 @@
-<p id="notice"><%= notice %></p>
+<h1>Postulaciones</h1>
 
-<h1>Listing Postulacions</h1>
-
-<table>
+<table class="table table-striped" >
   <thead>
     <tr>
-      <th>Post tiempo taller</th>
-      <th>Post referencia 1</th>
-      <th>Post referencia 2</th>
-      <th>Post estado</th>
+      <th>Antiguedad</th>
+      <th>Referencias</th>
+      <th> </th>
+      <th>Estado</th>
       <th>Encargado</th>
       <th>Administrador</th>
       <th colspan="3"></th>
@@ -24,9 +22,9 @@
         <td><%= postulacion.post_estado %></td>
         <td><%= postulacion.encargado_id %></td>
         <td><%= postulacion.administrador_id %></td>
-        <td><%= link_to 'Show', postulacion %></td>
-        <td><%= link_to 'Responder', edit_postulacion_path(postulacion) %></td>
-        <td><%= link_to 'Destroy', postulacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+        <td><%= link_to 'Ver', postulacion, class: "glyphicon glyphicon-search" %></td>
+        <td><%= link_to 'Responder', edit_postulacion_path(postulacion), class: "glyphicon glyphicon-Envelope" %></td>
+        <td><%= link_to 'Eliminar', postulacion, class: "glyphicon glyphicon-bin", method: :delete, data: { confirm: 'Are you sure?' } %></td> 
       </tr>
     <% end %>
   </tbody>

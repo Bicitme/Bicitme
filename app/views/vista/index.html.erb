@@ -7,7 +7,7 @@
 				<tbody>
 					<tr><td><%= link_to "Ingresar Bicicleta ", new_bicicletum_path %><br></td></tr>
 					<tr><td><%= link_to "Modificar Bicicletas", bicicleta_path %><br></td></tr>
-					<tr><td><%= link_to "Modificar Número Teléfonico", editartelf_path %><br></td></tr>
+					<!--<tr><td><%= link_to "Modificar Número Teléfonico", editartelf_path %><br></td></tr>-->
 					<tr><td><%= link_to "Solicitar Reparacion", registrarreparacion_path %><br></td></tr>
 					<tr><td><%= link_to "Responder Presupuestos", '#' %><br></td></tr>
 					<tr><td><%= link_to "Calificar Reparacion", editarreparacion_path %><br></td></tr>
@@ -23,22 +23,23 @@
 				<%end%>
 				<table class="table">
 				<thead><tr><th>Menu</th></tr></thead>
-				<tbody>
-					<p id="notice"><%= notice %></p>
-					<tr><td><%= link_to "Ver Peticiones ", reparacions_path %><br></td></tr>
-					<tr><td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td></tr>
-					<tr><td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td></tr>
-					<tr><td><%= link_to "Ver mi taller", tallers_path %><br></td></tr>
+					<tbody>
+						<tr><td><%= link_to "Ver Peticiones ", reparacions_path %><br></td></tr>
+						<tr><td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td></tr>
+						<tr><td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td></tr>
+						<tr><td><%= link_to "Ver mi taller", tallers_path %><br></td></tr>
 					</tbody>
 				</table>
 			<%else%>
 				<%if(current_user.usuar_tipo_cod == 'A')%>
-					<tr><td><%= link_to "Registrar Administrador", new_usuario_path %><br></td></tr>
-					<tr><td><%= link_to "Editar comunas", editarcomuna_path %><br></td></tr>
-					<tr><td><%= link_to "Revisar postulaciones", editarpostulacion_path %><br></td></tr>
-					<tr><td><%= link_to "REVISAR QUE PODÍA HACER EL ADMIN", '#' %><br></td></tr>
-					<tr><td><%= link_to "REVISAR", '#' %><br></td></tr>
-					<tr><td><%= link_to "REVISAR", '#' %><br></td></tr>
+				<h1>Panel de Administracion</h1>	
+				<div class="list-group">
+					<%= link_to "Registrar Administrador", new_usuario_path, class:"list-group-item" %>
+					<%= link_to "Revisar comunas", editarcomuna_path, class:"list-group-item" %>
+					<%= link_to "Revisar postulaciones", editarpostulacion_path, class:"list-group-item" %>
+					<%= link_to "Revisar Denuncias", '#', class:"list-group-item" %>
+					<%= link_to "Registrar Administrador", '#', class:"list-group-item" %>
+				</div>
 				<%end%>
 			<%end%>
 		<%end%>

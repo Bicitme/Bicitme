@@ -3,14 +3,14 @@
 <h2>
 <div class="field ">
 <%= label_tag :"Correo Electronico:" %><br>
-<%= text_field_tag :email,nil, class:"form-control", placeholder:"Correo Electronico"%>
+<%= text_field_tag :email,nil, class:"form-control", required: true, placeholder:"Correo Electronico"%>
 </div>
   <div class="field">
 <%= label_tag :"Contraseña:" %><br>
-<%= password_field_tag :password, nil, class:"form-control", placeholder:"Password"%>
+<%= password_field_tag :password, nil, class:"form-control", required: true, placeholder:"Password"%>
 </div>
   <div class="actions">
- 	<%= submit_tag "Iniciar Sesion", class:"btn btn-success" %>
+ 	<%= submit_tag "Iniciar Sesion", class:"btn btn-success", required: true %>
  </div>
 </h2>
 <% end %>

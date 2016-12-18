@@ -1,7 +1,7 @@
 <%= form_for(@comuna) do |f| %>
   <% if @comuna.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@comuna.errors.count, "error") %> prohibited this comuna from being saved:</h2>
+      <h2><%= pluralize(@comuna.errors.count, "error") %> No se pudo realizar la accion:</h2>
 
       <ul>
       <% @comuna.errors.full_messages.each do |message| %>
@@ -12,10 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :com_nombre %><br>
-    <%= f.text_field :com_nombre %>
+    <%= f.label :"Nombre" %><br>
+    <%= f.text_field :com_nombre, class:"form-control", required: true  %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Crear Comuna", class:"btn btn-success"%>
   </div>
 <% end %>

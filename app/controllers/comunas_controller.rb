@@ -28,8 +28,8 @@ class ComunasController < ApplicationController
 
     respond_to do |format|
       if @comuna.save
-        format.html { redirect_to @comuna, notice: 'Comuna was successfully created.' }
-        format.json { render :show, status: :created, location: @comuna }
+        format.html { redirect_to comunas_url, notice: 'Comuna was successfully created.' }
+        format.json { render :index, status: :created, location: @comuna }
       else
         format.html { render :new }
         format.json { render json: @comuna.errors, status: :unprocessable_entity }
@@ -42,8 +42,8 @@ class ComunasController < ApplicationController
   def update
     respond_to do |format|
       if @comuna.update(comuna_params)
-        format.html { redirect_to @comuna, notice: 'Comuna was successfully updated.' }
-        format.json { render :show, status: :ok, location: @comuna }
+        format.html { redirect_to comunas_url, notice: 'Comuna was successfully updated.' }
+        format.json { render :index, status: :ok, location: @comuna }
       else
         format.html { render :edit }
         format.json { render json: @comuna.errors, status: :unprocessable_entity }
