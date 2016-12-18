@@ -5,7 +5,7 @@ class PresupuestosController < ApplicationController
   # GET /presupuestos.json
   def index
     if (current_user.usuar_tipo_cod == 'C')
-      @presupuestos = Presupuesto.find_by_sql ["SELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = :user_id and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id", { :user_id => current_user.id }]
+      @presupuestos = Presupuesto.find_by_sql ["SELECT rep_comentario, bic_marca, bic_modelo, bic_color_princ, presupuestos.id, presupuestos.prep_precio_min, presupuestos.prep_precio_max, presupuestos.prep_comentario, presupuestos.prep_estado, presupuestos.taller_id, tallers.taller_nombre, presupuestos.reparacion_id FROM bicicleta, reparacions, presupuestos, tallers WHERE bicicleta.ciclista_id = :user_id and bicicleta.id = reparacions.bicicleta_id and presupuestos.reparacion_id = reparacions.id and tallers.id = presupuestos.taller_id and (presupuestos.prep_estado = 'Aceptado' or presupuestos.prep_estado = 'Espera')", { :user_id => current_user.id }]
       #@presupuestos = Presupuesto.all
     end
     if (current_user.usuar_tipo_cod == 'E')  
@@ -61,7 +61,11 @@ class PresupuestosController < ApplicationController
   # PATCH/PUT /presupuestos/1.json
   def update
     respond_to do |format|
+      
       if @presupuesto.update(presupuesto_params)
+        if @presupuesto.prep_estado == 'Aceptado'
+          Presupuesto.where.not(:id => @presupuesto.id).where(:reparacion_id => @presupuesto.reparacion_id).update_all(:prep_estado => 'Rechazado')
+        end
         format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully updated.' }
         format.json { render :show, status: :ok, location: @presupuesto }
       else

@@ -51,8 +51,14 @@ class PostulacionsController < ApplicationController
   # PATCH/PUT /postulacions/1
   # PATCH/PUT /postulacions/1.json
   def update      #EDITAR PARA AGREGAR QUE EL ADMIN EDITE
+    
+    
     respond_to do |format|
       if @postulacion.update(postulacion_params)
+        if (@postulacion.post_estado == 'Activo')
+          Taller.where(:encargado_id => @postulacion.encargado_id).update_all(:taller_estado => 'Activo')
+          Administrador.where(:usuario_id => current_user.id).update_all("admin_cant_aceptados = admin_cant_aceptados + 1") #(:admin_cant_aceptados => (:admin_cant_aceptados + 1))
+        end
         format.html { redirect_to @postulacion, notice: 'Postulacion was successfully updated.' }
         format.json { render :show, status: :ok, location: @postulacion }
       else
