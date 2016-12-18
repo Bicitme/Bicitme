@@ -30,17 +30,22 @@ class PresupuestosController < ApplicationController
     @taller = Taller.find_by(:encargado_id => current_user.id)
     @presupuesto.taller_id = @taller.id
     respond_to do |format|
-      if Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 1
-        if @presupuesto.save
-          format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
-          format.json { render :show, status: :created, location: @presupuesto }
-        else
-          format.html { render :new }
-          format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
+      if !Presupuesto.exists?(:reparacion_id => @presupuesto.reparacion_id)
+        if Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 1
+          if @presupuesto.save
+            format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
+            format.json { render :show, status: :created, location: @presupuesto }
+          else
+            format.html { render :new }
+            format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
+          end
+          else
+            format.html { redirect_to vista_taller_path, notice: 'No puede crear presupuestos, debido a que no tiene un taller activo' }
+            format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
         end
-        else
-          format.html { redirect_to vista_taller_path, notice: 'No puede crear presupuestos, debido a que no tiene un taller activo' }
-          format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
+      else
+        format.html { redirect_to vista_taller_path, notice: 'No puede crear más de un presupuesto, para una sola reparación.' }
+        format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
       end
     end
   end

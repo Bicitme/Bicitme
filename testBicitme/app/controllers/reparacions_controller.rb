@@ -29,7 +29,6 @@ class ReparacionsController < ApplicationController
     @reparacion.rep_estado = 'Espera'
     @reparacion.rep_fecha_in=Time.new
     @reparacion.rep_fecha_term="0000/00/00"
-    @reparacion.bicicleta_id = 
     respond_to do |format|
       if @reparacion.save
         format.html { redirect_to @reparacion, notice: 'Reparacion was successfully created.' }
