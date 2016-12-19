@@ -6,6 +6,15 @@
   <% end %>
   
   <% if current_user.usuar_tipo_cod == 'C'%>
+  	<% if @reparacion.rep_estado == 'Completado'%>
+  	<div class="field">
+    <%= f.label :calificacion_id %><br>
+    <%= f.collection_select :calificacion_id, Calificacion.all, :id, :cal_puntuacion %>
+  	</div>
+  	<div class="actions">
+	    <%= f.submit "Solicitar Reparacion", class:"btn btn-success"%>
+	  </div>
+  <%else%>
 	  <div class="field">
 	    <%= f.label :Direccion %><br>
 	    <%= f.text_field :rep_direccion, class:"form-control", required: true %>
@@ -25,6 +34,7 @@
 	  <div class="actions">
 	    <%= f.submit "Solicitar Reparacion", class:"btn btn-success"%>
 	  </div>
+	  <%end%>
   <%end%>
   
   <% if current_user.usuar_tipo_cod  == 'E'%>

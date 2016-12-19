@@ -1,6 +1,9 @@
 <h1>Confirmar Selección</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Confirmar', new_presupuesto_path(@reparacion)  %> |
+<%if current_user.usuar_tipo_cod == 'E'%>
+	<%= link_to 'Confirmar', new_presupuesto_path(@reparacion)  %> |
+<%else %>
+	<%= link_to 'Confirmar', root_path  %> |
+<% end %>
 <%= link_to 'Back', reparacions_path %>

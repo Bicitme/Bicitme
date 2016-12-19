@@ -28,13 +28,14 @@
         <td><%= reparacion.rep_fecha_term %></td>
         <td><%= reparacion.bicicleta_id %></td>
         <td><%= reparacion.calificacion_id %></td>
-        <% if current_user.usuar_tipo_cod == 'C'%>
-        	
+        
+        <% if current_user.usuar_tipo_cod == 'C' and reparacion.rep_estado == 'Completado'%>
+        	<td><%= link_to 'Seleccionar para Calificar', edit_reparacion_path(reparacion) %></td> 
+        <% else%>
+        	<% if current_user.usuar_tipo_cod == 'C' and reparacion.rep_estado == 'Espera'%>
         	<td><%= link_to 'Destroy', reparacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> <!-- editar para que el usuario no pueda eliminar una petición aceptada-->
+        	<% end %>
         <% end %>
-        <!--<% if current_user.usuar_tipo_cod == 'E'%>
-        	<td><%= link_to 'Seleccionar para Responder', edit_reparacion_path(reparacion) %></td> 
-        <% end %>-->
       </tr>
     <% end %>
   </tbody>

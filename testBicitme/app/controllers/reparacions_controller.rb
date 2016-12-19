@@ -45,6 +45,21 @@ class ReparacionsController < ApplicationController
   def update
     respond_to do |format|
       if @reparacion.update(reparacion_params)
+        if  current_user.usuar_tipo_cod == 'C'
+          @taller = Taller.find_by_sql(["SELECT tallers.* FROM  reparacions, presupuestos, tallers WHERE  :reparacions_id = presupuestos.reparacion_id and presupuestos.taller_id = tallers.id", { :reparacions_id => @reparacion.id }]).first
+          @cals = Taller.find_by_sql(["SELECT calificacions.cal_puntuacion FROM reparacions,presupuestos,tallers,calificacions WHERE :taller_id=presupuestos.taller_id and calificacions.id=reparacions.calificacion_id and reparacions.id=presupuestos.reparacion_id", {:taller_id => @taller.id}])
+          suma = 0
+          aux = 0
+          i = 0
+          @cals.each do |cal|
+            suma = cal.cal_puntuacion
+            if cal.cal_puntuacion
+              i+=1
+            end
+          end
+          suma =  suma/i
+          Taller.where(:id => @taller.id).update_all(:taller_calificacion => suma)
+        end
         format.html { redirect_to @reparacion, notice: 'Reparacion was successfully updated.' }
         format.json { render :show, status: :ok, location: @reparacion }
       else
