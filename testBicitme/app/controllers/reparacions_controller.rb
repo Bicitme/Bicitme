@@ -85,6 +85,6 @@ class ReparacionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reparacion_params
-      params.require(:reparacion).permit(:rep_direccion, :rep_distancia, :rep_comentario, :rep_estado, :rep_fecha_in, :rep_fecha_term, :bicicleta_id, :calificacion_id)
+      params.require(:reparacion).permit(:rep_direccion, :rep_distancia, :rep_comentario, :rep_estado, :rep_fecha_in, :rep_fecha_term, :bicicleta_id, :calificacion_id, :comuna_id)
     end
 end
