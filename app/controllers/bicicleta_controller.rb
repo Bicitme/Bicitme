@@ -63,6 +63,15 @@ class BicicletaController < ApplicationController
     end
   end
   
+  # GET /bicicletarobo
+  # GET /bicicleta.json
+  def robo
+    #@bicicleta = Bicicletum.find_by ciclista_id: current_user.id
+    @bicicleta = Bicicletum.where (["bic_estado_robo = 'V'"])
+    #@bicicleta =Bicicletum.all 
+  end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -76,3 +85,5 @@ class BicicletaController < ApplicationController
     end
     
 end
+
+

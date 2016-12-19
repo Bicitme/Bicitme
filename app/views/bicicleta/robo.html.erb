@@ -1,4 +1,4 @@
-<h1>Listado de Bicicleta</h1>
+<h1>Bicicletas Robadas</h1>
 
 <table class="table table-striped">
   <thead>
@@ -11,9 +11,6 @@
       <th>Color Principal</th>
       <th>Img</th>
       <th>Numero de Serie</th>
-      <th>Robada</th>
-      <th>Editar</th>
-      <th>Eliminar</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -38,22 +35,9 @@
           <td><%= bicicletum.bic_color_princ %></td>
           <td><%= bicicletum.bic_img_1 %></td>
           <td><%= bicicletum.bic_num_serie %></td>
-          <td>
-            <%if bicicletum.bic_estado_robo == 'V'%>
-              Robada
-            <%else%>
-              Normal
-            <%end%>
-          </td>
-          <td><%= link_to '',edit_bicicletum_path(bicicletum),class: "glyphicon glyphicon-pencil"%></td>
-          <td><%= link_to '', bicicletum, method: :delete, data: { confirm: 'Esta seguro?' }, class: "glyphicon glyphicon-remove"%></td></h2>
         </tr>
       <% end %>
   </tbody>
 </table>
 
 <br>
-
-<% if current_user %>
-  <%= link_to "Ingresar Bicicleta", new_bicicletum_path, class: "btn btn-lg btn-primary" %>
-<% end %>

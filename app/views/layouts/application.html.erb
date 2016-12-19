@@ -24,7 +24,7 @@
               	<li><%= link_to "Registrar Postulacion", registrarpostulacion_path %></li>
   	          	<li><%= link_to "Ver Peticiones", editarreparacion_path %></li>
   	          	<li><%= link_to "Crear Presupuestos",  presupuestos_path %></li>
-  	          	<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
+  	          	<li><%= link_to "Ver Bicicletas Robadas", robo_path %></li>
 	            <%else%>
 	          	  <%if current_user.usuar_tipo_cod == 'A'%>
                   <li><%= link_to "Postulaciones", editarpostulacion_path %></li>
