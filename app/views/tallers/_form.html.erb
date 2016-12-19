@@ -13,29 +13,29 @@
 
   <div class="field">
     <%= f.label :taller_nombre %><br>
-    <%= f.text_field :taller_nombre %>
+    <%= f.text_field :taller_nombre, class:"form-control", required: true   %>
   </div>
   <div class="field">
     <%= f.label :taller_patente %><br>
-    <%= f.text_field :taller_patente %>
+    <%= f.text_field :taller_patente, class:"form-control", required: true   %>
   </div>
   <div class="field">
     <%= f.label :taller_direccion %><br>
-    <%= f.text_field :taller_direccion %>
+    <%= f.text_field :taller_direccion, class:"form-control", required: true   %>
   </div>
   <div class="field">
     <%= f.label :taller_web_page %><br>
-    <%= f.text_field :taller_web_page %>
+    <%= f.text_field :taller_web_page, class:"form-control", required: true   %>
   </div>
   
   <div class="field">
     <%= f.label :taller_descripcion %><br>
-    <%= f.text_field :taller_descripcion %>
+    <%= f.text_field :taller_descripcion, class:"form-control", required: true   %>
   </div>
   
   <div class="field">
     <%= f.label :taller_fono %><br>
-    <%= f.text_field :taller_fono %>
+    <%= f.text_field :taller_fono, class:"form-control", required: true  %>
   </div>
   <div class="field">
     <%= f.label :comuna_id %><br>
@@ -62,6 +62,6 @@
     <%= f.number_field :encargado_id %>
   </div>-->
   <div class="actions">
-    <%= f.submit "Confimar"%>
+    <%= f.submit "Confimar", class:"btn btn-success"%>
   </div>
 <% end %>
