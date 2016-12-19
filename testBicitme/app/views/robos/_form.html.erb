@@ -28,12 +28,12 @@
     <%= f.text_field :robo_img %>
   </div>
   <div class="field">
-    <%= f.label :comuna_id %><br>
-    <%= f.number_field :comuna_id %>
+	    <%= f.label :comuna_id %><br>
+	    <%= f.collection_select :comuna_id, Comuna.all, :id, :com_nombre %>
   </div>
-  <div class="field">
-    <%= f.label :bicicleta_id %><br>
-    <%= f.number_field :bicicleta_id %>
+  <div class="field">										 
+	  <%= f.label :bicicleta_id %><br>
+	  <%= f.collection_select( :bicicleta_id, Bicicletum.find_by_sql(["SELECT bicicleta.* FROM bicicleta WHERE bic_estado_robo = 'V'", :ciclista_id => current_user.id]), :id, "mostrar_combinado")%> 
   </div>
   <div class="actions">
     <%= f.submit %>
