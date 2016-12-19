@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  robo_fecha: 2016-12-19
+  robo_direccion: MyString
+  robo_comentario: MyString
+  robo_img: MyString
+  comuna_id: 1
+  bicicleta_id: 1
+
+two:
+  robo_fecha: 2016-12-19
+  robo_direccion: MyString
+  robo_comentario: MyString
+  robo_img: MyString
+  comuna_id: 1
+  bicicleta_id: 1

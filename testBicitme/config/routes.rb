@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :denuncia
+  resources :robos
   resources :presupuestos
   get 'registrarpresupuesto', to: 'presupuestos#new', as: 'registrarpresupuesto'
   get 'editarpresupuesto', to: 'presupuestos#index', as: 'editarpresupuesto'

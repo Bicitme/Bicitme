@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161219040233) do
+ActiveRecord::Schema.define(version: 20161219045537) do
 
   create_table "administradors", force: :cascade do |t|
     t.string   "admin_run",             limit: 255
@@ -64,6 +64,18 @@ ActiveRecord::Schema.define(version: 20161219040233) do
     t.datetime "updated_at",             null: false
   end
 
+  create_table "denuncia", force: :cascade do |t|
+    t.string   "den_denunciante", limit: 255
+    t.string   "den_descripcion", limit: 255
+    t.date     "den_fecha"
+    t.string   "den_estado",      limit: 255
+    t.integer  "ciclista_id",     limit: 4
+    t.integer  "taller_id",       limit: 4
+    t.integer  "reparacion_id",   limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
+
   create_table "encargado_tallers", force: :cascade do |t|
     t.string   "enc_run",    limit: 255
     t.string   "enc_rol",    limit: 255
@@ -108,6 +120,17 @@ ActiveRecord::Schema.define(version: 20161219040233) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.integer  "comuna_id",       limit: 4
+  end
+
+  create_table "robos", force: :cascade do |t|
+    t.date     "robo_fecha"
+    t.string   "robo_direccion",  limit: 255
+    t.string   "robo_comentario", limit: 255
+    t.string   "robo_img",        limit: 255
+    t.integer  "comuna_id",       limit: 4
+    t.integer  "bicicleta_id",    limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   create_table "tallers", force: :cascade do |t|

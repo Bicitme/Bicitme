@@ -1,0 +1,2 @@
+json.extract! denuncium, :id, :den_denunciante, :den_descripcion, :den_fecha, :den_estado, :ciclista_id, :taller_id, :reparacion_id, :created_at, :updated_at
+json.url denuncium_url(denuncium, format: :json)

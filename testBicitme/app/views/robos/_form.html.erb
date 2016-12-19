@@ -1,0 +1,41 @@
+<%= form_for(@robo) do |f| %>
+  <% if @robo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@robo.errors.count, "error") %> prohibited this robo from being saved:</h2>
+
+      <ul>
+      <% @robo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :robo_fecha %><br>
+    <%= f.date_select :robo_fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :robo_direccion %><br>
+    <%= f.text_field :robo_direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :robo_comentario %><br>
+    <%= f.text_field :robo_comentario %>
+  </div>
+  <div class="field">
+    <%= f.label :robo_img %><br>
+    <%= f.text_field :robo_img %>
+  </div>
+  <div class="field">
+    <%= f.label :comuna_id %><br>
+    <%= f.number_field :comuna_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bicicleta_id %><br>
+    <%= f.number_field :bicicleta_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

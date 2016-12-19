@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Robo fecha:</strong>
+  <%= @robo.robo_fecha %>
+</p>
+
+<p>
+  <strong>Robo direccion:</strong>
+  <%= @robo.robo_direccion %>
+</p>
+
+<p>
+  <strong>Robo comentario:</strong>
+  <%= @robo.robo_comentario %>
+</p>
+
+<p>
+  <strong>Robo img:</strong>
+  <%= @robo.robo_img %>
+</p>
+
+<p>
+  <strong>Comuna:</strong>
+  <%= @robo.comuna_id %>
+</p>
+
+<p>
+  <strong>Bicicleta:</strong>
+  <%= @robo.bicicleta_id %>
+</p>
+
+<%= link_to 'Edit', edit_robo_path(@robo) %> |
+<%= link_to 'Back', robos_path %>

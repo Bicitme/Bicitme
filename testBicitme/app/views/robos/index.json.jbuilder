@@ -1,0 +1,1 @@
+json.array! @robos, partial: 'robos/robo', as: :robo

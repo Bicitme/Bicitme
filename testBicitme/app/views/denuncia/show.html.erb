@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Den denunciante:</strong>
+  <%= @denuncium.den_denunciante %>
+</p>
+
+<p>
+  <strong>Den descripcion:</strong>
+  <%= @denuncium.den_descripcion %>
+</p>
+
+<p>
+  <strong>Den fecha:</strong>
+  <%= @denuncium.den_fecha %>
+</p>
+
+<p>
+  <strong>Den estado:</strong>
+  <%= @denuncium.den_estado %>
+</p>
+
+<p>
+  <strong>Ciclista:</strong>
+  <%= @denuncium.ciclista_id %>
+</p>
+
+<p>
+  <strong>Taller:</strong>
+  <%= @denuncium.taller_id %>
+</p>
+
+<p>
+  <strong>Reparacion:</strong>
+  <%= @denuncium.reparacion_id %>
+</p>
+
+<%= link_to 'Edit', edit_denuncium_path(@denuncium) %> |
+<%= link_to 'Back', denuncia_path %>

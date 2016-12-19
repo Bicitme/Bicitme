@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Robos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Robo fecha</th>
+      <th>Robo direccion</th>
+      <th>Robo comentario</th>
+      <th>Robo img</th>
+      <th>Comuna</th>
+      <th>Bicicleta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @robos.each do |robo| %>
+      <tr>
+        <td><%= robo.robo_fecha %></td>
+        <td><%= robo.robo_direccion %></td>
+        <td><%= robo.robo_comentario %></td>
+        <td><%= robo.robo_img %></td>
+        <td><%= robo.comuna_id %></td>
+        <td><%= robo.bicicleta_id %></td>
+        <td><%= link_to 'Show', robo %></td>
+        <td><%= link_to 'Edit', edit_robo_path(robo) %></td>
+        <td><%= link_to 'Destroy', robo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Robo', new_robo_path %>
