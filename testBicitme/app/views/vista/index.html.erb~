@@ -26,7 +26,7 @@
 				<table class="table">
 				<thead><tr><th>Menu</th></tr></thead>
 				<tbody>
-					<p id="notice"><%= notice %></p>
+					 
 					<tr><td><%= link_to "Ver Peticiones ", reparacions_path %><br></td></tr>
 					<tr><td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td></tr>
 					<tr><td><%= link_to "Ver Bicicletas Robadas", robos_path %><br></td></tr>
