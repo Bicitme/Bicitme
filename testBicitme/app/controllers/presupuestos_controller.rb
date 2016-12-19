@@ -40,16 +40,21 @@ class PresupuestosController < ApplicationController
     @presupuesto.taller_id = @taller.id
     respond_to do |format|
       if !Presupuesto.exists?(:reparacion_id => @presupuesto.reparacion_id, :taller_id => @taller.id)
-        if Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 1
-          if @presupuesto.save
-            format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
-            format.json { render :show, status: :created, location: @presupuesto }
-          else
-            format.html { render :new }
+        if Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 1 
+          if Taller.where(:encargado_id => current_user.id, :taller_estado => 'Activo')
+            if @presupuesto.save
+              format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
+              format.json { render :show, status: :created, location: @presupuesto }
+            else
+              format.html { render :new }
+              format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
+            end
+            else
+              format.html { redirect_to vista_taller_path, notice: 'No puede crear presupuestos, debido a que no tiene un taller activo' }
             format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
-          end
+            end
           else
-            format.html { redirect_to vista_taller_path, notice: 'No puede crear presupuestos, debido a que no tiene un taller activo' }
+            format.html { redirect_to vista_taller_path, notice: 'No puede crear presupuestos, debido a que no tiene una postulacion activa' }
             format.json { render json: @presupuesto.errors, status: :unprocessable_entity }
         end
       else
