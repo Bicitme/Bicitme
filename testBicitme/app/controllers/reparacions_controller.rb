@@ -52,10 +52,8 @@ class ReparacionsController < ApplicationController
           aux = 0
           i = 0
           @cals.each do |cal|
-            suma = cal.cal_puntuacion
-            if cal.cal_puntuacion
-              i+=1
-            end
+            suma += cal.cal_puntuacion
+            i+=1
           end
           suma =  suma/i
           Taller.where(:id => @taller.id).update_all(:taller_calificacion => suma)
