@@ -20,7 +20,7 @@
   	  <% else %>
   	  <div class="field">
 	    <%= f.label :reparacion_id %><br>
-	    <%= f.collection_select( :reparacion_id, Reparacion.all, :id, "mostrar_combinado")%>
+	    <%= f.collection_select( :reparacion_id, Reparacion.where(:rep_estado => 'Espera'), :id, "mostrar_combinado")%>
 	  </div>
 	  <div class="field">
 	    <%= f.label :prep_precio_min %><br>
