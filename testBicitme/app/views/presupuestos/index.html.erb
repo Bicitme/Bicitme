@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Presupuestos</h1>
 <%if current_user.usuar_tipo_cod == 'E'%>
+<h1>Listado de Presupuestos Aceptados</h1>
 	    <table>
   <thead>
     <tr>
@@ -16,6 +16,7 @@
   </thead>
 	<% end %>
 <%if current_user.usuar_tipo_cod == 'C'%>
+<h1>Listado de Presupuestos Recibidos</h1>
 	    <table>
   <thead>
     <tr>
@@ -50,7 +51,7 @@
 	        <td><%= presupuesto.taller_nombre %></td>
 	        <td><%= presupuesto.taller_calificacion %></td>
 	        <td><%= presupuesto.reparacion_id %></td> 
-	        <td><%= link_to 'Show', presupuesto %></td>
+	        <td><%= link_to 'Mostrar', presupuesto %></td>
 	        <!--<td><%= link_to 'Edit', edit_presupuesto_path(presupuesto) %></td>
 	        <td><%= link_to 'Destroy', presupuesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
 	      </tr>
@@ -65,7 +66,7 @@
 	        <td><%= presupuesto.prep_estado %></td>
 	        <td><%= presupuesto.taller_id %></td>
 	        <td><%= presupuesto.reparacion_id %></td> 
-	        <td><%= link_to 'Show', presupuesto %></td>
+	        <td><%= link_to 'Mostrar', presupuesto %></td>
 	        <!--<td><%= link_to 'Edit', edit_presupuesto_path(presupuesto) %></td>
 	        <td><%= link_to 'Destroy', presupuesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
 	      </tr>
@@ -76,5 +77,5 @@
 
 <br>
 <%if current_user.usuar_tipo_cod == 'E'%>
-	<%= link_to 'New Presupuesto', new_presupuesto_path %>
+	<%= link_to 'Crear Nuevo Presupuesto', new_presupuesto_path %>
 <% end %>

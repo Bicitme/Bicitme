@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Postulacions</h1>
+<h1>Listado de Postulaciones</h1>
 
 <table>
   <thead>
@@ -24,9 +24,9 @@
         <td><%= postulacion.post_estado %></td>
         <td><%= postulacion.encargado_id %></td>
         <td><%= postulacion.administrador_id %></td>
-        <td><%= link_to 'Show', postulacion %></td>
+        <td><%= link_to 'Mostrar', postulacion %></td>
         <td><%= link_to 'Responder', edit_postulacion_path(postulacion) %></td>
-        <td><%= link_to 'Destroy', postulacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+        <td><%= link_to 'Destruir', postulacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
       </tr>
     <% end %>
   </tbody>

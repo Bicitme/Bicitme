@@ -10,8 +10,7 @@
 					<tr><td><%= link_to "Ingresar datos de robo, recuerde que debe marcar la bicicleta dentro de modificar bicicleta", new_robo_path%><br></td></tr>
       
 					<tr><td><%= link_to "Modificar Número Teléfonico", editartelf_path %><br></td></tr>
-					<tr><td><%= link_to "Solicitar Reparacion",registrarreparacion_path %><br></td></tr>
-					<tr><td><%= link_to "Listado Reparaciones",reparacions_path %><br></td></tr>
+					<tr><td><%= link_to "Solicitar Reparacion", registrarreparacion_path %><br></td></tr>
 					<tr><td><%= link_to "Responder Presupuestos", presupuestos_path %><br></td></tr>
 					<tr><td><%= link_to "Calificar Reparacion", editarreparacion_path %><br></td></tr>
 				</tbody>

@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Reparacions</h1>
+<h1>Listado de Reparaciones</h1>
 
 <table>
   <thead>
@@ -33,7 +33,7 @@
         	<td><%= link_to 'Seleccionar para Calificar', edit_reparacion_path(reparacion) %></td> 
         <% else%>
         	<% if current_user.usuar_tipo_cod == 'C' and reparacion.rep_estado == 'Espera'%>
-        	<td><%= link_to 'Destroy', reparacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> <!-- editar para que el usuario no pueda eliminar una petición aceptada-->
+        	<td><%= link_to 'Destruir', reparacion, method: :delete, data: { confirm: 'Esta seguro?' } %></td> <!-- editar para que el usuario no pueda eliminar una petición aceptada-->
         	<% end %>
         <% end %>
       </tr>
