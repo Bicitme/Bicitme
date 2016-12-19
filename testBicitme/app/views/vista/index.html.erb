@@ -7,9 +7,11 @@
 				<tbody>
 					<tr><td><%= link_to "Ingresar Bicicleta ", new_bicicletum_path %><br></td></tr>
 					<tr><td><%= link_to "Modificar Bicicletas", bicicleta_path %><br></td></tr>
+					<tr><td><%= link_to "Ingresar datos de robo, recuerde que debe marcar la bicicleta dentro de modificar bicicleta", new_robo_path%><br></td></tr>
+      
 					<tr><td><%= link_to "Modificar Número Teléfonico", editartelf_path %><br></td></tr>
 					<tr><td><%= link_to "Solicitar Reparacion", registrarreparacion_path %><br></td></tr>
-					<tr><td><%= link_to "Responder Presupuestos", '#' %><br></td></tr>
+					<tr><td><%= link_to "Responder Presupuestos", presupuestos_path %><br></td></tr>
 					<tr><td><%= link_to "Calificar Reparacion", editarreparacion_path %><br></td></tr>
 				</tbody>
 			</table>
@@ -27,7 +29,7 @@
 					<p id="notice"><%= notice %></p>
 					<tr><td><%= link_to "Ver Peticiones ", reparacions_path %><br></td></tr>
 					<tr><td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td></tr>
-					<tr><td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td></tr>
+					<tr><td><%= link_to "Ver Bicicletas Robadas", robos_path %><br></td></tr>
 					<tr><td><%= link_to "Ver mi taller", tallers_path %><br></td></tr>
 					</tbody>
 				</table>

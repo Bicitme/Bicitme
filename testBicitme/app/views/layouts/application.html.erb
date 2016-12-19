@@ -19,6 +19,7 @@
             	<li><%= link_to "Solicitar Reparacion", registrarreparacion_path %></li>
             	<li><%= link_to "Ver Presupuestos", presupuestos_path%></li>
             	<li><%= link_to "Calificar una Reparacion", reparacions_path%></li>
+            	
             <%else%>
               <%if current_user.usuar_tipo_cod == 'E'%>
               	<li><%= link_to "Registrar Taller", registrartaller_path %></li>
@@ -26,7 +27,7 @@
               	<li><%= link_to "Editar Telefono del taller", tallers_path %></li>
   	          	<li><%= link_to "Ver Peticiones", editarreparacion_path %></li>
   	          	<li><%= link_to "Crear Presupuestos",  presupuestos_path %></li>
-  	          	<li><%= link_to "Ver Bicicletas Robadas", '#' %></li>
+  	          	<li><%= link_to "Ver Bicicletas Robadas", robos_path %></li>
 	            <%else%>
 	          	  <%if current_user.usuar_tipo_cod == 'A'%>
 	            		<li><%= link_to "Registrar Administrador", new_usuario_path %></li>
