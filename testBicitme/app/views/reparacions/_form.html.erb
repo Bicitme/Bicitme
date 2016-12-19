@@ -12,7 +12,7 @@
     <%= f.collection_select :calificacion_id, Calificacion.all, :id, :cal_puntuacion %>
   	</div>
   	<div class="actions">
-	    <%= f.submit "Solicitar Reparacion", class:"btn btn-success"%>
+	    <%= f.submit "Calificar", class:"btn btn-success"%>
 	  </div>
   <%else%>
 	  <div class="field">
@@ -20,8 +20,8 @@
 	    <%= f.text_field :rep_direccion, class:"form-control", required: true %>
 	  </div>
 	  <div class="field">
-	    <%= f.label :Distancia %><br>
-	    <%= f.text_field :rep_distancia, class:"form-control", required: true %>
+	    <%= f.label :comuna_id %><br>
+	    <%= f.collection_select :comuna_id, Comuna.all, :id, :com_nombre %>
 	  </div>
 	  <div class="field">
 	    <%= f.label :Comentario %><br>

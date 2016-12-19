@@ -20,7 +20,7 @@
   	  <% else %>
   	  <div class="field">
 	    <%= f.label :reparacion_id %><br>
-	    <%= f.collection_select( :reparacion_id, Reparacion.where(:rep_estado => 'Espera'), :id, "mostrar_combinado")%>
+	    <%= f.collection_select( :reparacion_id, Reparacion.find_by_sql["SELECT reparacions.* FROM tallers, reparacions WHERE reparacions.comuna_id = tallers.comuna_id and :encargado_id = tallers.encargado_id and reparacions.rep_estado = 'Espera'", :encargado_id => current_user.id], :id, "mostrar_combinado")%> <!--where(:rep_estado => 'Espera')-->
 	  </div>
 	  <div class="field">
 	    <%= f.label :prep_precio_min %><br>
