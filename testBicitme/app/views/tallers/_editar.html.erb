@@ -1,0 +1,51 @@
+<%= form_for(@taller) do |f| %>
+  <% if @taller.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taller.errors.count, "error") %> prohibited this taller from being saved:</h2>
+
+      <ul>
+      <% @taller.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :taller_web_page %><br>
+    <%= f.text_field :taller_web_page %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :taller_descripcion %><br>
+    <%= f.text_field :taller_descripcion %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :taller_fono %><br>
+    <%= f.text_field :taller_fono %>
+  </div>
+  <!--<div class="field">
+    <%= f.label :taller_estado %><br>
+    <%= f.text_field :taller_estado %>
+  </div>
+  <div class="field">
+    <%= f.label :taller_cant_den %><br>
+    <%= f.number_field :taller_cant_den %>
+  </div>
+  <div class="field">
+    <%= f.label :taller_cant_cont_den %><br>
+    <%= f.number_field :taller_cant_cont_den %>
+  </div>
+  <div class="field">
+    <%= f.label :taller_calificacion %><br>
+    <%= f.text_field :taller_calificacion %>
+  </div>
+  <div class="field">
+    <%= f.label :encargado_id %><br>
+    <%= f.number_field :encargado_id %>
+  </div>-->
+  <div class="actions">
+    <%= f.submit "Confimar"%>
+  </div>
+<% end %>

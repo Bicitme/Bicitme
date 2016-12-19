@@ -1,0 +1,56 @@
+<%= form_for(@postulacion) do |f| %>
+  <% if @postulacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@postulacion.errors.count, "error") %> prohibited this postulacion from being saved:</h2>
+
+      <ul>
+      <% @postulacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% if current_user.usuar_tipo_cod == 'A'%>
+  <div class="field">
+    <%= f.label :post_tiempo_taller %><br>
+    <%= @postulacion.post_tiempo_taller %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_1 %><br>
+    <%= @postulacion.post_referencia_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_2 %><br>
+    <%= @postulacion.post_referencia_2 %>
+  </div>
+	  <div class="field">      
+	    <%= f.label :post_estado %><br>
+	    <%= f.text_field :post_estado %>
+	  </div>
+  <div class="field">
+    <%= f.label :encargado_id %><br>
+    <%= @postulacion.encargado_id %>
+  </div>
+  <%else%>
+  <div class="field">
+    <%= f.label :post_tiempo_taller %><br>
+    <%= f.text_field :post_tiempo_taller %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_1 %><br>
+    <%= f.text_field :post_referencia_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :post_referencia_2 %><br>
+    <%= f.text_field :post_referencia_2 %>
+  </div>
+  <%end%>
+  <!--
+  <div class="field">
+    <%= f.label :administrador_id %><br>
+    <%= f.number_field :administrador_id %>
+  </div>-->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

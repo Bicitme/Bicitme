@@ -1,0 +1,2 @@
+json.extract! administrador, :id, :admin_run, :admin_cant_aceptados, :admin_cant_ban_cic, :admin_cant_ban_taller, :usuario_id, :created_at, :updated_at
+json.url administrador_url(administrador, format: :json)

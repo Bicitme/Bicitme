@@ -1,0 +1,17 @@
+<div class="center jumbotron">
+  <h1>BORRAR ESTA PAGINA <%= current_user.usuar_correo %>:</h1>
+  <table class="table">
+    <thead>
+      <tr><th>Menu</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><%= link_to "Ingresar Bicicleta ", new_bicicletum_path %><br></td></tr>
+      <tr><td><%= link_to "Modificar Bicicletas", bicicleta_path %><br></td></tr>
+      <tr><td><%= link_to "Modificar Número Teléfonico", editartelf_path %><br></td></tr>
+      <tr><td><%= link_to "Solicitar Reparacion", reparacions_path %><br></td></tr>
+      <tr><td><%= link_to "Responder Presupuestos", '#' %><br></td></tr>
+      <tr><td><%= link_to "Calificar Reparacion", editarreparacion_path %><br></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

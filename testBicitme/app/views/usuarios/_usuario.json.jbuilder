@@ -1,0 +1,2 @@
+json.extract! usuario, :id, :usuar_run, :usuar_ap_pat, :usuar_ap_mat, :usuar_nom_usuario, :usuar_contrasegna, :usuar_correo, :usuar_tipo_cod, :created_at, :updated_at
+json.url usuario_url(usuario, format: :json)

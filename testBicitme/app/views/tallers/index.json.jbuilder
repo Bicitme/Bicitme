@@ -1,0 +1,1 @@
+json.array! @tallers, partial: 'tallers/taller', as: :taller

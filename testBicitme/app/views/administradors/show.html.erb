@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Admin run:</strong>
+  <%= @administrador.admin_run %>
+</p>
+
+<p>
+  <strong>Admin cant aceptados:</strong>
+  <%= @administrador.admin_cant_aceptados %>
+</p>
+
+<p>
+  <strong>Admin cant ban cic:</strong>
+  <%= @administrador.admin_cant_ban_cic %>
+</p>
+
+<p>
+  <strong>Admin cant ban taller:</strong>
+  <%= @administrador.admin_cant_ban_taller %>
+</p>
+<!--
+<p>
+  <strong>Usuario:</strong>
+  <%= @administrador.usuario_id %>
+</p>
+
+<%= link_to 'Edit', edit_administrador_path(@administrador) %> |-->
+<%= link_to 'Siguiente', administradors_path %>

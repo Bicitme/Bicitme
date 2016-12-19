@@ -1,0 +1,2 @@
+json.extract! reparacion, :id, :rep_direccion, :rep_distancia, :rep_comentario, :rep_estado, :rep_fecha_in, :rep_fecha_term, :bicicleta_id, :calificacion_id, :created_at, :updated_at
+json.url reparacion_url(reparacion, format: :json)

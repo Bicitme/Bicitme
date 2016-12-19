@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Reparacions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rep direccion</th>
+      <th>Rep distancia</th>
+      <th>Rep comentario</th>
+      <th>Rep estado</th>
+      <th>Rep fecha in</th>
+      <th>Rep fecha term</th>
+      <th>Bicicleta</th>
+      <th>Calificacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reparacions.each do |reparacion| %>
+      <tr>
+        <td><%= reparacion.rep_direccion %></td>
+        <td><%= reparacion.rep_distancia %></td>
+        <td><%= reparacion.rep_comentario %></td>
+        <td><%= reparacion.rep_estado %></td>
+        <td><%= reparacion.rep_fecha_in %></td>
+        <td><%= reparacion.rep_fecha_term %></td>
+        <td><%= reparacion.bicicleta_id %></td>
+        <td><%= reparacion.calificacion_id %></td>
+        <% if current_user.usuar_tipo_cod == 'C'%>
+        	
+        	<td><%= link_to 'Destroy', reparacion, method: :delete, data: { confirm: 'Are you sure?' } %></td> <!-- editar para que el usuario no pueda eliminar una petición aceptada-->
+        <% end %>
+        <!--<% if current_user.usuar_tipo_cod == 'E'%>
+        	<td><%= link_to 'Seleccionar para Responder', edit_reparacion_path(reparacion) %></td> 
+        <% end %>-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<% if current_user.usuar_tipo_cod == 'C'%>
+	<%= link_to 'Solicitar una nueva reparación', registrarreparacion_path %>
+<% end %>

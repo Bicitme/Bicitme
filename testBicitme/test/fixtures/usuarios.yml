@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuar_run: MyString
+  usuar_ap_pat: MyString
+  usuar_ap_mat: MyString
+  usuar_nom_usuario: MyString
+  usuar_contrasegna: MyString
+  usuar_correo: MyString
+  usuar_tipo_cod: MyText
+
+two:
+  usuar_run: MyString
+  usuar_ap_pat: MyString
+  usuar_ap_mat: MyString
+  usuar_nom_usuario: MyString
+  usuar_contrasegna: MyString
+  usuar_correo: MyString
+  usuar_tipo_cod: MyText

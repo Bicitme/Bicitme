@@ -1,0 +1,72 @@
+<%= form_for(@presupuesto) do |f| %>
+  <% if @presupuesto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@presupuesto.errors.count, "error") %> prohibited this presupuesto from being saved:</h2>
+
+      <ul>
+      <% @presupuesto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% if current_user.usuar_tipo_cod == 'E'%>
+  	  <%if @presupuesto.prep_estado == 'Aceptado'%>
+  	  <div class="field">
+	    <%= f.label :prep_estado %><br>
+	    <%= f.text_field :prep_estado %>
+	  </div>
+	  
+  	  <% else %>
+  	  <div class="field">
+	    <%= f.label :reparacion_id %><br>
+	    <%= f.collection_select( :reparacion_id, Reparacion.all, :id, "mostrar_combinado")%>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_precio_min %><br>
+	    <%= f.text_field :prep_precio_min %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_precio_max %><br>
+	    <%= f.number_field :prep_precio_max %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_comentario %><br>
+	    <%= f.text_field :prep_comentario %>
+	  </div>
+	  <%end %>
+	  <!--
+	  <div class="field">
+	    <%= f.label :taller_id %><br>
+	    <%= f.number_field :taller_id %>
+	  </div>-->
+  <% end %>
+  <% if current_user.usuar_tipo_cod == 'C'%>
+	  <div class="field">
+	    <%= f.label :prep_precio_min %><br>
+	    <%= @presupuesto.prep_precio_min %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_precio_max %><br>
+	    <%= @presupuesto.prep_precio_max %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_comentario %><br>
+	    <%= @presupuesto.prep_comentario %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :prep_estado %><br>
+	    <%= f.text_field :prep_estado %>
+	  </div>
+  	  <div class="field">
+	    <%= f.label :taller_nombre %><br>
+	    <%= @presupuesto.taller_id %>
+	  </div>
+  <%end%>
+  
+  
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

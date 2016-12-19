@@ -1,0 +1,2 @@
+json.extract! taller, :id, :taller_nombre, :taller_patente, :taller_direccion, :taller_web_page, :taller_cant_den, :taller_cant_cont_den, :taller_descripcion, :taller_calificacion, :taller_fono, :taller_estado, :comuna_id, :encargado_id, :created_at, :updated_at
+json.url taller_url(taller, format: :json)

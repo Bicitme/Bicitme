@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cic_run: MyString
+  cic_cant_rep: 1
+  cic_cant_den: 1
+  cic_fono: MyString
+  cic_estado: MyString
+  usuario_id: 1
+
+two:
+  cic_run: MyString
+  cic_cant_rep: 1
+  cic_cant_den: 1
+  cic_fono: MyString
+  cic_estado: MyString
+  usuario_id: 1

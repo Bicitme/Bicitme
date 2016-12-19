@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enc_run: MyString
+  enc_rol: MyString
+  enc_tiempo: 1
+  enc_estado: MyString
+  usuario_id: 1
+
+two:
+  enc_run: MyString
+  enc_rol: MyString
+  enc_tiempo: 1
+  enc_estado: MyString
+  usuario_id: 1

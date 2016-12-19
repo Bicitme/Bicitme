@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  taller_nombre: MyString
+  taller_patente: MyString
+  taller_direccion: MyString
+  taller_web_page: MyString
+  taller_cant_den: 1
+  taller_cant_cont_den: 1
+  taller_descripcion: MyString
+  taller_calificacion: 1.5
+  taller_fono: MyString
+  taller_estado: MyString
+  comuna_id: 1
+  encargado_id: 1
+
+two:
+  taller_nombre: MyString
+  taller_patente: MyString
+  taller_direccion: MyString
+  taller_web_page: MyString
+  taller_cant_den: 1
+  taller_cant_cont_den: 1
+  taller_descripcion: MyString
+  taller_calificacion: 1.5
+  taller_fono: MyString
+  taller_estado: MyString
+  comuna_id: 1
+  encargado_id: 1

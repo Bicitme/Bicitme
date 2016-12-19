@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Usuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> Run</th>
+      <th> Apellido Paterno</th>
+      <th> Apellido Materno</th>
+      <th> Nombre de Usuario</th>
+      <th> Contraseña</th>
+      <th> Correo</th>
+      <th> Tipo Usuario</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuarios.each do |usuario| %>
+      <tr>
+        <td><%= usuario.usuar_run %></td>
+        <td><%= usuario.usuar_ap_pat %></td>
+        <td><%= usuario.usuar_ap_mat %></td>
+        <td><%= usuario.usuar_nom_usuario %></td>
+        <td><%= usuario.usuar_contrasegna %></td>
+        <td><%= usuario.usuar_correo %></td>
+        <td><%= usuario.usuar_tipo_cod %></td>
+        <td><%= link_to 'Mostrar', usuario %></td>
+        <td><%= link_to 'Editar', edit_usuario_path(usuario) %></td>
+        <td><%= link_to 'Eliminar', usuario, method: :delete, data: { confirm: '¿Esta seguro/a?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% if current_user %>
+<%= link_to 'Ver Bicicletas registradas', bicicleta_path %>
+<% end %>

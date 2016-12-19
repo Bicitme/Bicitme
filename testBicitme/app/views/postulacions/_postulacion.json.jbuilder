@@ -1,0 +1,2 @@
+json.extract! postulacion, :id, :post_tiempo_taller, :post_referencia_1, :post_referencia_2, :post_estado, :encargado_id, :administrador_id, :created_at, :updated_at
+json.url postulacion_url(postulacion, format: :json)

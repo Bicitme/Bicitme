@@ -1,0 +1,1 @@
+json.array! @reparacions, partial: 'reparacions/reparacion', as: :reparacion

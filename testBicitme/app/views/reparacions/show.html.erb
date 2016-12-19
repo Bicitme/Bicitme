@@ -1,0 +1,42 @@
+<p>
+  <strong>Direccion:</strong>
+  <%= @reparacion.rep_direccion %>
+</p>
+
+<p>
+  <strong>Distancia:</strong>
+  <%= @reparacion.rep_distancia %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= @reparacion.rep_comentario %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @reparacion.rep_estado %>
+</p>
+
+<p>
+  <strong>Fecha Ingreso:</strong>
+  <%= @reparacion.rep_fecha_in %>
+</p>
+
+<p>
+  <strong>Fecha Termino:</strong>
+  <%= @reparacion.rep_fecha_term %>
+</p>
+
+<p>
+  <strong>Bicicleta:</strong>
+  <%= @reparacion.bicicleta_id %>
+</p>
+
+<p>
+  <strong>Calificacion:</strong>
+  <%= @reparacion.calificacion_id %>
+</p>
+
+<%= link_to 'Edit', edit_reparacion_path(@reparacion) %> |
+<%= link_to 'Back', reparacions_path %>

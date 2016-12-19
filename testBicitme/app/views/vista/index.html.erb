@@ -1,0 +1,51 @@
+<div class="center">
+	<%if current_user %>
+		<%if current_user.usuar_tipo_cod == 'C' %>
+			<h1>Hola <%= current_user.usuar_nom_usuario %>:</h1>
+			<table class="table">
+				<thead><tr><th>Menu</th></tr></thead>
+				<tbody>
+					<tr><td><%= link_to "Ingresar Bicicleta ", new_bicicletum_path %><br></td></tr>
+					<tr><td><%= link_to "Modificar Bicicletas", bicicleta_path %><br></td></tr>
+					<tr><td><%= link_to "Modificar Número Teléfonico", editartelf_path %><br></td></tr>
+					<tr><td><%= link_to "Solicitar Reparacion", registrarreparacion_path %><br></td></tr>
+					<tr><td><%= link_to "Responder Presupuestos", '#' %><br></td></tr>
+					<tr><td><%= link_to "Calificar Reparacion", editarreparacion_path %><br></td></tr>
+				</tbody>
+			</table>
+		<%else%>
+			<%if (current_user.usuar_tipo_cod == 'E') %>
+				<h1>Bienvenido <%= current_user.usuar_nom_usuario %> a BicitMe:</h1>
+				<%if  Postulacion.where(:encargado_id => current_user.id, :post_estado => "Activo").count == 0%>
+					<h2>Estimado, su taller aun se encuentra bajo verificacion.
+					Puede solicitar mayor informacion a nuestro correo: info@bicitme.cl   
+					<li><%= link_to "Cerrar Sesion", logout_path, class: "btn btn-lg btn-danger"  %></li><h2>
+				<%end%>
+				<table class="table">
+				<thead><tr><th>Menu</th></tr></thead>
+				<tbody>
+					<p id="notice"><%= notice %></p>
+					<tr><td><%= link_to "Ver Peticiones ", reparacions_path %><br></td></tr>
+					<tr><td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td></tr>
+					<tr><td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td></tr>
+					<tr><td><%= link_to "Ver mi taller", tallers_path %><br></td></tr>
+					</tbody>
+				</table>
+			<%else%>
+				<%if(current_user.usuar_tipo_cod == 'A')%>
+					<tr><td><%= link_to "Registrar Administrador", new_usuario_path %><br></td></tr>
+					<tr><td><%= link_to "Editar comunas", editarcomuna_path %><br></td></tr>
+					<tr><td><%= link_to "Revisar postulaciones", editarpostulacion_path %><br></td></tr>
+					<tr><td><%= link_to "REVISAR QUE PODÍA HACER EL ADMIN", '#' %><br></td></tr>
+					<tr><td><%= link_to "REVISAR", '#' %><br></td></tr>
+					<tr><td><%= link_to "REVISAR", '#' %><br></td></tr>
+				<%end%>
+			<%end%>
+		<%end%>
+	<%else%>
+		<h1>Bienvenido a BicitMe</h1>
+		<h2>Este proyecto tiene como fin ayudar a los amantes de las dos ruedas cuando más lo necesiten:</h2>
+		<%= link_to "Crear Cuenta", new_usuario_path, class: "btn btn-lg btn-primary" %>
+	<%end%>
+</div>
+

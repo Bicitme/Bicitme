@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prep_precio_min: MyString
+  prep_precio_max: 1
+  prep_comentario: MyString
+  prep_estado: MyString
+  taller_id: 1
+  reparacion_id: 1
+
+two:
+  prep_precio_min: MyString
+  prep_precio_max: 1
+  prep_comentario: MyString
+  prep_estado: MyString
+  taller_id: 1
+  reparacion_id: 1

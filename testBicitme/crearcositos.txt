@@ -1,0 +1,13 @@
+rails generate scaffold Usuario usuar_run:string usuar_ap_pat:string usuar_ap_mat:string usuar_nom_usuario:string usuar_contrasegna:string usuar_correo:string usuar_tipo_cod:text
+
+rails generate scaffold Bicicleta bic_id:integer bic_marca:string bic_modelo:string bic_tipo:string bic_aro:integer bic_velocidades:integer bic_color_princ:string bic_img_1:string bic_img_2:string bic_num_serie:string bic_estado_robo:string bic_cic_run:string
+
+rails g scaffold Tipo_usuario t_us_cod:text t_us_descripcion:text 
+
+rails g scaffold Ciclista cic_run:string cic_cant_rep:integer cic_cant_den:integer cic_fono:string cic_estado:string usuario_id:integer
+
+rails g scaffold Comuna com_nombre:string
+
+rails g scaffold Taller taller_nombre:string taller_patente:string taller_direccion:string taller_web_page:string taller_cant_den:integer taller_cant_cont_den:integer taller_descripcion:string taller_calificacion:float taller_fono:string taller_estado:string comuna_id:integer encargado_id:integer
+
+rails g scaffold Postulacion post_tiempo_taller:integer post_referencia_1:string post_referencia_2:string post_estado:string encargado_id:integer administrador_id:integer 
