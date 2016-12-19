@@ -2,16 +2,14 @@
 	<%if current_user %>
 		<%if current_user.usuar_tipo_cod == 'C' %>
 			<h1>Hola <%= current_user.usuar_nom_usuario %>:</h1>
-			<table class="table">
-				<thead><tr><th>Menu</th></tr></thead>
-				<tbody>
-					<tr><td><%= link_to "Ingresar Bicicleta ", new_bicicletum_path %><br></td></tr>
-					<tr><td><%= link_to "Modificar Bicicletas", bicicleta_path %><br></td></tr>
-					<!--<tr><td><%= link_to "Modificar Número Teléfonico", editartelf_path %><br></td></tr>-->
-					<tr><td><%= link_to "Solicitar Reparacion", registrarreparacion_path %><br></td></tr>
-					<tr><td><%= link_to "Responder Presupuestos", '#' %><br></td></tr>
-					<tr><td><%= link_to "Calificar Reparacion", editarreparacion_path %><br></td></tr>
-				</tbody>
+			<div class="list-group">
+				<%= link_to "Ingresar Bicicleta ", new_bicicletum_path, class:"list-group-item" %>
+				<%= link_to "Modificar Bicicletas", bicicleta_path, class:"list-group-item" %>
+				<!--<%= link_to "Modificar Número Teléfonico", editartelf_path, class:"list-group-item" %>-->
+				<%= link_to "Solicitar Reparacion", registrarreparacion_path, class:"list-group-item" %>
+				<%= link_to "Responder Presupuestos", '#', class:"list-group-item" %>
+				<%= link_to "Calificar Reparacion", editarreparacion_path, class:"list-group-item" %>
+			</div>
 			</table>
 		<%else%>
 			<%if (current_user.usuar_tipo_cod == 'E') %>
@@ -21,14 +19,12 @@
 					Puede solicitar mayor informacion a nuestro correo: info@bicitme.cl   
 					<li><%= link_to "Cerrar Sesion", logout_path, class: "btn btn-lg btn-danger"  %></li><h2>
 				<%end%>
-				<table class="table">
-				<thead><tr><th>Menu</th></tr></thead>
-					<tbody>
-						<tr><td><%= link_to "Ver Peticiones ", reparacions_path %><br></td></tr>
-						<tr><td><%= link_to "Ver y crear presupuestos", presupuestos_path %><br></td></tr>
-						<tr><td><%= link_to "Ver Bicicletas Robadas", '#' %><br></td></tr>
-						<tr><td><%= link_to "Ver mi taller", tallers_path %><br></td></tr>
-					</tbody>
+				<div class="list-group">
+					<%= link_to "Ver Peticiones ", reparacions_path, class:"list-group-item" %>
+					<%= link_to "Ver y crear presupuestos", presupuestos_path, class:"list-group-item" %>
+					<%= link_to "Ver Bicicletas Robadas", '#', class:"list-group-item" %>
+					<%= link_to "Ver mi taller", tallers_path, class:"list-group-item" %>
+				</div>
 				</table>
 			<%else%>
 				<%if(current_user.usuar_tipo_cod == 'A')%>
@@ -46,7 +42,44 @@
 	<%else%>
 		<h1>Bienvenido a BicitMe</h1>
 		<h2>Este proyecto tiene como fin ayudar a los amantes de las dos ruedas cuando más lo necesiten:</h2>
-		<%= link_to "Crear Cuenta", new_usuario_path, class: "btn btn-lg btn-primary" %>
+
+		<br>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="first-slide" src="1_t.jpg" alt="Primera imagen">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1 style="color:#000000 !important">Atencion Talleres</h1>
+							<p style="color:#000000 !important">Si conoces o perteneces a un taller, inscribite en BicitMe!</p>
+							<%= link_to "Crear Cuenta", new_usuario_path, class: "btn btn-lg btn-primary" %>
+						</div><!--/.carousel-caption -->
+					</div><!--/.container -->
+				</div><!--/.item active -->
+				<div class="item">
+					<img class="second-slide" src="2_t.jpg" alt="Segunda imagen">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1 style="color:#000000 !important">Crear Cuenta</h1>
+							<p style="color:#000000 !important">Si aun no tienes una cuenta, registrate ya!</p>
+							<%= link_to "Crear Cuenta", new_usuario_path, class: "btn btn-lg btn-primary" %>
+						</div><!--/.carousel-caption -->
+					</div><!--/.container -->
+				</div><!--/.item -->
+			</div><!--/.carousel-inner -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 	<%end%>
 </div>
 
